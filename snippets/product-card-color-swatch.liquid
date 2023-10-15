@@ -1,0 +1,60 @@
+{% liquid
+    assign color_swatches_trigger = settings.color_swatches_trigger | downcase
+    assign options_with_values = product.options_with_values
+    assign color_option = ''
+    assign limit_values = 4
+    assign rest_values = 0
+
+    for option in options_with_values
+        assign option_name = option.name | downcase
+        if color_swatches_trigger contains option_name
+            assign color_option = option
+            break
+        endif
+    endfor
+
+%}
+
+{% if color_option != blank %}
+    <color-swatch class="product-card__swatch color-swatch no-js-hidden">
+        {%- liquid
+            if color_option.values.size > limit_values
+                assign rest_values = color_option.values.size | minus: limit_values
+            endif
+        -%}
+        {% for value in color_option.values %}
+            {%- if forloop.index > limit_values -%}
+                {% break %}
+            {% endif %}
+            {% liquid
+                assign selected = false
+                if product.selected_variant != blank and color_option.selected_value == value
+                    assign selected = true
+                endif
+            %}
+            <a
+                class="color-swatch__item focus-inset tooltip-activator btn btn--plain"
+                data-option-position="{{ color_option.position }}"
+                data-option-type="color"
+                data-value="{{- value | escape | downcase -}}"
+                aria-label="{{- value -}}"
+                role="button"
+                tabindex="-1"
+                href="{{ product.url }}"
+                {% if selected %}aria-selected="true"{% endif %}
+            >
+                <span class="visually-hidden">{{- value -}}</span>
+                <span class="tooltip">{{- value -}}</span>
+            </a>
+        {% endfor %}
+        {% if rest_values > 0 %}
+            <a class="color-swatch__item tooltip-activator focus-inset btn btn--plain btn-rest" href="{{ product.url }}">
+                <span>+{{ rest_values }}</span>
+                <span class="tooltip">{{ 'products.product.view_more_options' | t }}</span>
+            </a>
+        {% endif %}
+    </color-swatch>
+    <script type="application/json">
+       {{ product.variants | json }}
+    </script>
+{% endif %}

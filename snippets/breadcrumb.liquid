@@ -1,0 +1,105 @@
+{% unless template == 'index' or template == 'cart' or template == 'list-collections' %}
+  <div class="{{ container }}">
+    <nav
+      class="breadcrumbs justify-{{ justify | default: 'start' }}{% if hide_current %} breadcrumbs--hide-current{% endif %}"
+      role="navigation"
+      aria-label="breadcrumbs"
+    >
+      <a href="/" title="Home">{{ 'general.breadcrumbs.home' | t }}</a>
+      {% if template contains 'page' %}
+        <span aria-hidden="true" class="breadcrumbs--sep">
+          <svg width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M.75.875 3.875 4 .75 7.125" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span>{{ page.title }}</span>
+      {% elsif template contains 'product' %}
+        {% if collection.url != blank %}
+          <span aria-hidden="true" class="breadcrumbs--sep">
+            <svg width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M.75.875 3.875 4 .75 7.125" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          {{ collection.title | link_to: collection.url }}
+        {% else %}
+          {% assign current_collection = product.collections | first %}
+          <span aria-hidden="true" class="breadcrumbs--sep">
+            <svg width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M.75.875 3.875 4 .75 7.125" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <a href="{{ current_collection.url }}">{{ current_collection.title }}</a>
+        {% endif %}
+        <span aria-hidden="true" class="breadcrumbs--sep breadcrumbs--sep-last">
+          <svg width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M.75.875 3.875 4 .75 7.125" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="breadcrumbs--last">{{ product.title }}</span>
+      {% elsif template contains 'collection' and collection.handle %}
+        {% if collection.handle != 'all' %}
+          <span aria-hidden="true" class="breadcrumbs--sep">
+            <svg width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M.75.875 3.875 4 .75 7.125" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <a href="{{ routes.all_products_collection_url }}">{{ 'general.breadcrumbs.collections' | t }}</a>
+        {% endif %}
+        <span aria-hidden="true" class="breadcrumbs--sep">
+          <svg width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M.75.875 3.875 4 .75 7.125" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        {% if current_tags %}
+          {% capture url %}/collections/{{ collection.handle }}{% endcapture %}
+          {{ collection.title | link_to: url }}
+          <span aria-hidden="true" class="breadcrumbs--sep">
+            <svg width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M.75.875 3.875 4 .75 7.125" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="breadcrumbs--last">{{ current_tags | join: ' + ' }}</span>
+        {% else %}
+          <span class="breadcrumbs--last">{{ collection.title }}</span>
+        {% endif %}
+      {% elsif template == 'blog' %}
+        <span aria-hidden="true" class="breadcrumbs--sep">
+          <svg width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M.75.875 3.875 4 .75 7.125" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        {% if current_tags %}
+          {{ blog.title | link_to: blog.url }}
+          <span aria-hidden="true" class="breadcrumbs--sep">
+            <svg width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M.75.875 3.875 4 .75 7.125" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="breadcrumbs--last">{{ current_tags | join: ' + ' }}</span>
+        {% else %}
+          <span>{{ blog.title }}</span>
+        {% endif %}
+      {% elsif template == 'article' %}
+        <span aria-hidden="true" class="breadcrumbs--sep">
+          <svg width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M.75.875 3.875 4 .75 7.125" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        {{ blog.title | link_to: blog.url }}
+        <span aria-hidden="true" class="breadcrumbs--sep">
+          <svg width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M.75.875 3.875 4 .75 7.125" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="breadcrumbs--last">{{ article.title }}</span>
+      {% else %}
+        <span aria-hidden="true" class="breadcrumbs--sep">
+          <svg width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M.75.875 3.875 4 .75 7.125" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="breadcrumbs--last">{{ page_title }}</span>
+      {% endif %}
+    </nav>
+  </div>
+{% endunless %}

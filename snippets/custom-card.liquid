@@ -1,0 +1,15 @@
+<div class="f-column">
+    <div class="collection-card collection-card--style-1 text-center f-image--hover-effect">
+        <a title="{{ title }}" href="{{ link }}" class="collection-card__wrapper">
+            <div class="collection-card__image-wrapper f-card overflow-hidden">
+                {% render 'responsive-image',
+                    image: image,
+                    wrapper_class: "collection-card__image"
+                %}
+            </div>
+            <div class="collection-card__info">
+                <h3 class="collection-card__title text-current h6">{{ title }}</h3>
+            </div>
+        </a>
+    </div>
+</div>

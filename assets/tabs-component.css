@@ -1,0 +1,94 @@
+.f-tabs__header {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.f-tabs__header-group {
+  position: relative;
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  justify-content: flex-start;
+  vertical-align: top;
+  gap: 3.8rem;
+  box-shadow: 0 -1px var(--color-border) inset;
+  overflow-y: hidden;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.f-tabs__header-group::-webkit-scrollbar {
+  display: none;
+}
+.f-information-tabs .f-tabs__header-group {
+  margin-bottom: 0;
+  box-shadow: none;
+}
+@media (max-width: 639.98px) {
+  .f-tabs__header-group {
+    gap: 2.4rem;
+  }
+}
+.f-information-tabs .f-tabs__header {
+  box-shadow: 0 -1px var(--color-border) inset;
+}
+.f-tabs__nav {
+  padding: 0.8rem 0;
+  cursor: pointer;
+  transition: 0.3s all;
+  background: none !important;
+  border: none !important;
+  opacity: 0.7;
+  position: relative;
+  font-weight: var(--font-heading-weight);
+  text-transform: inherit;
+  line-height: 1.4;
+  height: auto;
+}
+.f-tabs__nav:hover, .f-tabs__nav[aria-selected=true] {
+  color: var(--color-text-body) !important;
+  opacity: 1;
+}
+@media (max-width: 639.98px) {
+  .f-tabs__nav {
+    font-size: calc(var(--font-body-size) * 1px);
+  }
+}
+.f-tabs__content {
+  animation: f-fade-in 0.45s ease;
+}
+.f-tabs__nav--position {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--color-text-body);
+  transform: scaleX(0) translate(0);
+  transform: scaleX(var(--scale, 0)) translate(var(--translate, 0));
+  transform-origin: left;
+}
+.f-tabs__nav--position.is-initialized {
+  transition: transform 0.3s ease-in-out;
+}
+.f-tabs__view-all {
+  margin-top: 4rem;
+}
+@media (max-width: 639.98px) {
+  .f-tabs__view-all {
+    margin-top: 2.4rem;
+  }
+}
+@media (min-width: 768px) {
+  .f-tabs .collapsible__button {
+    display: none;
+  }
+  .f-tabs__content-inner {
+    height: auto !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .f-tabs--collapsible .f-tabs__content {
+    display: block !important;
+  }
+}

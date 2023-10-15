@@ -1,0 +1,185 @@
+<h1 class="m-4 text-center">{{ page_title }}</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<style>
+  .text-center {
+    text-align: center !important;
+  }
+  .m-4 {
+  margin: 1.5rem !important;
+  }
+  
+.m-2 {
+  margin: 0.5rem !important;
+}
+  .pb-5,
+  .py-5 {
+    padding-bottom: 3rem !important;
+  }
+  .p-3 {
+  padding: 1rem !important;
+}
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.mr-2,
+.mx-2 {
+  margin-right: 0.5rem !important;
+}
+.align-items-start {
+  -webkit-box-align: start !important;
+  -ms-flex-align: start !important;
+  align-items: flex-start !important;
+}
+.position-relative {
+  position: relative !important;
+}
+.position-absolute {
+  position: absolute !important;
+}
+.mt-auto,
+.my-auto {
+  margin-top: auto !important;
+}
+.d-inline-block {
+  display: inline-block !important;
+}
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+.border-top {
+  border-top: 1px solid #dee2e6 !important;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.justify-content-center {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+.card-title {
+  margin-bottom: 0.75rem;
+}
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: 1.25rem;
+}
+.form-check-input {
+  position: absolute;
+  margin-top: 0.3rem;
+  margin-left: -1.25rem;
+}
+.form-check-inline {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 0;
+  margin-right: 0.75rem;
+}
+</style>
+
+<body>
+<section class="pb-5">
+   <div class="p-3 d-flex mx-2 justify-content-center">
+      <div  class=" mx-2" id="right" >
+        <div id="product_picker" class="m-2 row justify-content-center">
+        </div>
+    </div>
+   </div>
+</section>
+
+</body>
+<script>
+var url = new URLSearchParams(window.location.search);
+var mysid=url.get('s');
+
+
+
+const product_type=[
+        {
+            "type":"Adult_T",
+            "vid":"45892743659800",
+            "size":["L","M","S","XL"],
+            "title":"成人T恤",
+            "price":"250",
+            "Color":["White","Black","Blue","Charcoal","Daisy","LightBlue","LightPink","MilitaryGreen","Orange","Sand","Seafoam"],
+            "ColorCode":["#FFFFFF","#000000","#4d7082","#6f7170","#f2c745","#ADD8E6","#FFC0CB","#556B2F","#fc5201","#c3b6a9","#73998c"]
+        },
+        {
+            "type":"Kid_T",
+            "vid":"45892747591960",
+            "size":["110","120","130","140","150"],
+            "title":"小童T恤",
+            "price":"199",
+            "Color":["White","Black","Blue","Charcoal","Daisy","LightBlue","LightPink","MilitaryGreen","Orange","Sand","Seafoam"],
+            "ColorCode":["#FFFFFF","#000000","#4d7082","#6f7170","#f2c745","#ADD8E6","#FFC0CB","#556B2F","#fc5201","#c3b6a9","#73998c"]
+        },
+        {
+            "type":"ToteBag",
+            "vid":"45892754440472",
+            "size":[],
+            "title":"帆布袋",
+            "price":"150",
+            "Color":["White"],
+            "ColorCode":['#FFFFFF']
+        }
+    ]
+
+  function addProduct(){
+    for (var i = 0; i < product_type.length; i++) {
+        htmlString = `  
+        <a class="" style="width: 18rem;" href="https://www.tinymemory.com.hk/pages/customizationv2?s=${mysid}&p=${product_type[i].type}" >
+        <img src="https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/src/product/${product_type[i].type}/Cover.png" class="card-img-top">
+        <div class="card-body">
+            <h5 class="text-center card-title">${product_type[i].title}</h5>
+            <h5 class="text-center card-title">HKD $${product_type[i].price}</h5>
+        </div>
+
+        </a>`;
+    document.getElementById("product_picker").innerHTML += htmlString;
+    }
+
+  
+}
+
+
+
+
+addProduct();
+
+
+</script>
+
+  
+</html>

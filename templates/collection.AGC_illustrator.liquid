@@ -1,0 +1,274 @@
+<h1 class="m-4 text-center">{{ page_title }}</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<style>
+  .text-center {
+    text-align: center !important;
+  }
+  .m-4 {
+  margin: 1.5rem !important;
+  }
+  
+.m-2 {
+  margin: 0.5rem !important;
+}
+  .pb-5,
+  .py-5 {
+    padding-bottom: 3rem !important;
+  }
+  .p-3 {
+  padding: 1rem !important;
+}
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.mr-2,
+.mx-2 {
+  margin-right: 0.5rem !important;
+}
+.align-items-start {
+  -webkit-box-align: start !important;
+  -ms-flex-align: start !important;
+  align-items: flex-start !important;
+}
+.position-relative {
+  position: relative !important;
+}
+.position-absolute {
+  position: absolute !important;
+}
+.mt-auto,
+.my-auto {
+  margin-top: auto !important;
+}
+.d-inline-block {
+  display: inline-block !important;
+}
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+.border-top {
+  border-top: 1px solid #dee2e6 !important;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.justify-content-center {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+.card-title {
+  margin-bottom: 0.75rem;
+}
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: 1.25rem;
+}
+.form-check-input {
+  position: absolute;
+  margin-top: 0.3rem;
+  margin-left: -1.25rem;
+}
+.form-check-inline {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 0;
+  margin-right: 0.75rem;
+}
+</style>
+
+<body>
+<section class="pb-5">
+   <div class="p-3 d-flex mx-2 align-items-start">
+      <div  class=" mx-2" id="right" >
+        <div id="illustrator_picker" class="m-2 row justify-content-center">
+        </div>
+    </div>
+   </div>
+</section>
+
+</body>
+<script>
+    const illustrator=[
+        {
+          "id":"1",
+          "name":"大偵探福爾摩斯",
+          "description":"description",
+            "sticker_url":[
+             "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E5%A4%A7%E5%81%B5%E6%8E%A2%E7%A6%8F%E7%88%BE%E6%91%A9%E6%96%AF/%E5%A4%A7%E5%81%B5%E6%8E%A2%E7%A6%8F%E7%88%BE%E6%91%A9%E6%96%AF_001.png",
+             "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E5%A4%A7%E5%81%B5%E6%8E%A2%E7%A6%8F%E7%88%BE%E6%91%A9%E6%96%AF/%E5%A4%A7%E5%81%B5%E6%8E%A2%E7%A6%8F%E7%88%BE%E6%91%A9%E6%96%AF_002.png",
+             "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E5%A4%A7%E5%81%B5%E6%8E%A2%E7%A6%8F%E7%88%BE%E6%91%A9%E6%96%AF/%E5%A4%A7%E5%81%B5%E6%8E%A2%E7%A6%8F%E7%88%BE%E6%91%A9%E6%96%AF_003.png"
+      
+            ]
+      },
+          {
+            "id":"2",
+            "name":"小流氓",
+            "description":"description",
+              "sticker_url":[
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E5%B0%8F%E6%B5%81%E6%B0%93/cover_002.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E5%B0%8F%E6%B5%81%E6%B0%93/cover_003.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E5%B0%8F%E6%B5%81%E6%B0%93/cover_004.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E5%B0%8F%E6%B5%81%E6%B0%93/cover_005.png",
+                
+              ]
+          },
+          {
+            "id":"3",
+            "name":"中華英雄",
+            "description":"description",
+              "sticker_url":[
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84/BLO072.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84/cover_001.png"
+      
+              ]
+          },
+          {
+            "id":"4",
+            "name":"中華英雄Q版",
+            "description":"description",
+              "sticker_url":[
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q%E7%89%88/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q_001.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q%E7%89%88/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q_002.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q%E7%89%88/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q_003.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q%E7%89%88/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q_004.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q%E7%89%88/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q_005.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q%E7%89%88/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q_006.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q%E7%89%88/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q_007.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q%E7%89%88/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q_008.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q%E7%89%88/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q_009.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q%E7%89%88/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q_010.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q%E7%89%88/%E4%B8%AD%E8%8F%AF%E8%8B%B1%E9%9B%84Q_011.png",
+      
+              ]
+          },
+          {
+            "id":"5",
+            "name":"天子傳奇",
+            "description":"description",
+              "sticker_url":[
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E5%A4%A9%E5%AD%90%E5%82%B3%E5%A5%87/%E5%A4%A9%E5%AD%90%E5%82%B3%E5%A5%87.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E5%A4%A9%E5%AD%90%E5%82%B3%E5%A5%87/%E7%A5%9E%E5%85%B5%E7%8E%84%E5%A5%872.png",
+              ]
+          },
+          {
+            "id":"6",
+            "name":"李小龍",
+            "model":["iphone14","iphone13","iphone6"],
+            "description":"description",
+              "sticker_url":[
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E6%9D%8E%E5%B0%8F%E9%BE%8D/01.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E6%9D%8E%E5%B0%8F%E9%BE%8D/02.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E6%9D%8E%E5%B0%8F%E9%BE%8D/03.png",
+                 "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E6%9D%8E%E5%B0%8F%E9%BE%8D/04.png",
+                 "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E6%9D%8E%E5%B0%8F%E9%BE%8D/05.png",
+                 "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E6%9D%8E%E5%B0%8F%E9%BE%8D/06.png",
+                 "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E6%9D%8E%E5%B0%8F%E9%BE%8D/07.png",
+                 "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/%E6%9D%8E%E5%B0%8F%E9%BE%8D/08.png",
+                
+              ]
+          },
+          {
+            "id":"7",
+            "name":"The Lanes HK",
+            "model":["iphone14","iphone13","iphone6"],
+            "description":"description",
+              "sticker_url":[
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/laneshk/The+Lanes+HK+002.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/laneshk/The+Lanes+HK+002.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/laneshk/The+Lanes+HK+003.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/laneshk/The+Lanes+HK+004.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/laneshk/The+Lanes+HK+005.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/laneshk/The+Lanes+HK+006.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/laneshk/The+Lanes+HK+007.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/laneshk/The+Lanes+HK+008.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/laneshk/The+Lanes+HK+009.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/laneshk/The+Lanes+HK+010.png",
+              ]
+          },
+          {
+            "id":"8",
+            "name":"Net D Studio",
+            "model":["iphone14","iphone13","iphone6"],
+            "description":"description",
+              "sticker_url":[
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/netD/netd_001.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/netD/netd_002.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/netD/netd_003.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/netD/netd_004.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/netD/netd_005.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/netD/netd_006.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/netD/netd_007.png",
+              ]
+          },
+          {
+            "id":"9",
+            "name":"NYA HOME",
+            "model":["iphone14","iphone13","iphone6"],
+            "description":"description",
+              "sticker_url":[
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/NYA+HOME/image0.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/NYA+HOME/image1.png",
+                "https://shopifyplugcustom.s3.ap-northeast-2.amazonaws.com/TinyMemory/sticker_image/NYA+HOME/image2.png",
+                
+              ]
+          }
+        ];
+
+  function addillustrator(my_illustrator){
+    
+    if(my_illustrator==null){
+        for(let i=0;i<illustrator.length;i++){
+            addillustrator(illustrator[i]);
+        }
+    }
+    htmlString = `  
+    <a class="" style="width: 25vw;" href="https://www.tinymemory.com.hk/collections/acg_type?s=${my_illustrator.id-1}" >
+      <img src="${my_illustrator.sticker_url[0]}"  class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="text-center card-title">${my_illustrator.name}</h5>
+      </div>
+    </a>`;
+  document.getElementById("illustrator_picker").innerHTML += htmlString;
+  
+}
+
+addillustrator();
+
+
+</script>
+
+  
+</html>
