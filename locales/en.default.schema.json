@@ -1113,6 +1113,9 @@
           "options__4": {
             "label": "Logo left, menu left"
           },
+          "options__5": {
+            "label": "TC_Logo Top center, Menu Top bottom"
+          },
           "label": "Layout",
           "sticky_header": {
             "label": "Enable sticky header",
