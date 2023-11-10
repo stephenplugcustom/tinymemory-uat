@@ -104,11 +104,15 @@
           <div class="site-header__left flex items-center" style="justify-content: center;">
             {% render 'site-logo', section: section %}
           </div>
-          <div class="site-header__inner flex site-header__mobile-logo--{{ logo_mobile_position | default: 'center' }}"
-          style="justify-content: center;">
-              {% render 'site-nav', section: section %}
+          <div>
+            <div class="site-header__inner flex site-header__mobile-logo--{{ logo_mobile_position | default: 'center' }}"
+            style="justify-content: center;">
+                {% render 'site-nav', section: section %}
+            </div>
+            <div class="site-header__right">
               {% render 'header__addons', section: section %}
-          </div>
+            </div>
+        </div>
 
       {% else %}
         <div class="site-header__inner flex site-header__mobile-logo--{{ logo_mobile_position | default: 'center' }}">
