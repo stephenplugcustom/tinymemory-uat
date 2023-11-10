@@ -102,27 +102,7 @@
         </div>
           {% when 'design-5' %}
           <div class="site-header__inner flex site-header__mobile-logo--{{ logo_mobile_position | default: 'left' }}">
-            <drawer-opener
-              class="mobile-nav-toggle hidden md-down:flex no-js-hidden"
-              data-drawer="#Drawer-MobileNav"
-            >
-              <button
-                class="btn btn--plain btn--icon focus-inset"
-                aria-haspopup="dialog"
-                aria-label="{{ 'layout.navigation.expand' | t }}"
-              >
-                {% render 'icon-hamburger' %}
-              </button>
-            </drawer-opener>
-            <!-- <div class="site-header__left flex items-center">
-              {% render 'site-logo', section: section %}
-            </div> -->
-            <div class="site-header__center site-header__menu hidden md:flex">
-              {% render 'site-nav', section: section, split: true, split_part: 'first' %}
-            </div>
-            <div class="site-header__right">
-              {% render 'header__addons', section: section %}
-            </div>
+           
           </div>
 
       {% else %}
