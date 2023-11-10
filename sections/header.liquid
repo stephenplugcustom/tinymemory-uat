@@ -106,13 +106,12 @@
           </div>
           <div>
             <div class="site-header__inner flex site-header__mobile-logo--{{ logo_mobile_position | default: 'center' }}"
-            style="justify-content: center; background-color: brown; margin: auto;">
+            style="justify-content: center; background-color: brown;">
                 {% render 'site-nav', section: section %}
-                <!-- set the item postopn is end of div -->
-                <div class="site-header__right">
-                  {% render 'header__addons', section: section %}
-                </div>
-
+                <!-- set the item align to right -->
+                <div style="display: flex; align-self: flex-end;">
+                {% render 'header__addons', section: section %}
+              </div>
             </div>
             
         </div>
