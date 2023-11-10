@@ -210,6 +210,6 @@
     border-bottom-left-radius: 0;
   }
   .f-popup__teaser {
-    bottom: calc(var(--f-mobile-navbar-height) + 1rem);
+    bottom: calc(var(--f-mobile-navbar-height, 0px) + 1rem);
   }
 }

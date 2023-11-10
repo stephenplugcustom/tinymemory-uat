@@ -15,6 +15,7 @@
   line-height: 32px;
 }
 .site-footer__top {
+  background-color: #d10a11;
   padding: 4.5rem 0 3rem;
 }
 @media (max-width: 1023.98px) {
@@ -60,11 +61,12 @@
 }
 .site-footer__block-heading {
   margin-bottom: 1.2rem;
-  color: currentColor;
+  color: white;
 }
 @media (max-width: 639.98px) {
   .site-footer__block-heading {
     padding: 1.5rem 0 1rem;
+    color: white;!important
   }
 }
 .site-footer__block .rte {
@@ -150,3 +152,5 @@
     left: auto;
   }
 }
+
+

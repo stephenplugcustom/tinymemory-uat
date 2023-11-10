@@ -1164,11 +1164,16 @@ responsive-image img {
   line-height: 1;
   margin-top: 1rem;
 }
+.f-form__message svg,
 .f-form__message .f-icon {
   flex-shrink: 0;
   height: 1.5rem;
   width: 1.5rem;
   margin-right: 1rem;
+}
+
+.errors ul {
+  list-style: disc;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -1299,4 +1304,3 @@ responsive-image img {
     }
   }
 }
-

@@ -1,4 +1,3 @@
-<script src="{{ 'redirection.js' | asset_url }}" defer="defer"></script>
 {% liquid
   assign layout = section.settings.layout
   assign sticky_header = section.settings.sticky_header
@@ -101,6 +100,31 @@
             {% render 'header__addons', section: section %}
           </div>
         </div>
+          {% when 'design-5' %}
+        <div class="site-header__inner flex site-header__mobile-logo--{{ logo_mobile_position | default: 'left' }}">
+					<drawer-opener
+						class="mobile-nav-toggle hidden md-down:flex no-js-hidden"
+						data-drawer="#Drawer-MobileNav"
+					>
+						<button
+							class="btn btn--plain btn--icon focus-inset"
+							aria-haspopup="dialog"
+							aria-label="{{ 'layout.navigation.expand' | t }}"
+						>
+							{% render 'icon-hamburger' %}
+						</button>
+					</drawer-opener>
+          <div class="site-header__left flex items-center">
+            {% render 'site-logo', section: section %}
+          </div>
+          <div class="site-header__center site-header__menu hidden md:flex">
+            {% render 'site-nav', section: section %}
+          </div>
+          <div class="site-header__right">
+            {% render 'header__addons', section: section %}
+          </div>
+        </div>
+
       {% else %}
         <div class="site-header__inner flex site-header__mobile-logo--{{ logo_mobile_position | default: 'left' }}">
 					<drawer-opener
@@ -332,6 +356,10 @@
         {
           "value": "design-4",
           "label": "t:sections.header.settings.layout.options__4.label"
+        },
+        {
+          "value": "design-5",
+          "label": "t:sections.header.settings.layout.options__5.label"
         }
       ],
       "default": "design-1",

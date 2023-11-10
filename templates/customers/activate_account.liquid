@@ -18,26 +18,25 @@
     </p>
     {%- form 'activate_customer_password' -%}
       {%- if form.errors -%}
-        <h2 class="form__message" tabindex="-1" autofocus>
+        <h2 class="f-form-message" tabindex="-1" autofocus>
           <svg aria-hidden="true" focusable="false" role="presentation">
             <use href="#icon-error" />
           </svg>
           {{ 'templates.contact.form.error_heading' | t }}
         </h2>
-        <ul>
-          {%- for field in form.errors -%}
-            <li>
-              {%- if field == 'form' -%}
-                {{ form.errors.messages[field] }}
-              {%- else -%}
-                <a href="#{{ field }}">
-                  {{ form.errors.translated_fields[field] | capitalize }}
-                  {{ form.errors.messages[field] }}
-                </a>
-              {%- endif -%}
-            </li>
-          {%- endfor -%}
-        </ul>
+					<div class="errors">
+							<ul>
+									{%- for field in form.errors -%}
+											<li>
+													{%- if field == 'form' -%}
+															<li>
+																	{{ form.errors.messages[field] }}
+															</li>
+													{%- endif -%}
+											</li>
+									{%- endfor -%}
+							</ul>
+					</div>
       {%- endif -%}
   
       <div class="form-field">     
@@ -57,7 +56,7 @@
           {{ 'customer.activate_account.password' | t }}
         </label>
         {%- if form.errors contains 'password' -%}
-          <small id="password-error" class="form__message">
+          <small id="password-error" class="f-form-message">
             <svg aria-hidden="true" focusable="false" role="presentation">
               <use href="#icon-error" />
             </svg>

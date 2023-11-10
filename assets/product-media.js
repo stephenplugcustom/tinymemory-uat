@@ -16,6 +16,31 @@ if (!customElements.get('media-gallery')) {
 				sliderCounter: '.flickity-counter--current',
 				toggleZoom: ['.js-photoswipe--zoom']
 			}
+
+      let touchingCarousel = false;
+      let startXCoordinate;
+
+      document.body.addEventListener('touchstart', (e) => {
+        if (e.target.closest('.flickity-slider')) {
+          touchingCarousel = true;
+        } else {
+          touchingCarousel = false;
+          return;
+        }
+        startXCoordinate = e.touches[0].pageX;
+      });
+
+      document.body.addEventListener(
+        'touchmove',
+        (e) => {
+          if (touchingCarousel && e.cancelable) {
+            if (Math.abs(e.touches[0].pageX - startXCoordinate) > 10) {
+              e.preventDefault();
+            }
+          }
+        },
+        { passive: false }
+      );
 		}
 
 		connectedCallback() {
@@ -95,10 +120,6 @@ if (!customElements.get('media-gallery')) {
 					if (this.enableZoom) this.initImageZoom()
 				}
 			}, 100)
-      // prevent swipe to navigate gesture
-      this.domNodes.mediaGallery.addEventListener('touchstart', (e) => {
-        e.preventDefault();
-      });
 		}
 
 		initImageZoom() {

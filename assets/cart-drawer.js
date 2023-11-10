@@ -31,6 +31,7 @@ class CartDrawer extends HTMLElement {
       if (this.openWhenAdded && !this.drawer.isOpen()) {
         this.drawer.openDrawer()
         document.body.classList.add('prevent-scroll')
+        window.FoxThemeEvents.emit(`ON_CART_DRAWER_OPEN`, parsedState)
       }
     });
 

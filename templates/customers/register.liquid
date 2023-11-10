@@ -15,20 +15,17 @@
           </svg>
           {{ 'templates.contact.form.error_heading' | t }}
         </h4>
-        <ul>
-          {%- for field in form.errors -%}
-            <li>
-              {%- if field == 'form' -%}
-                {{ form.errors.messages[field] }}
-              {%- else -%}
-                <a class="btn btn--underline" href="#RegisterForm-{{ field }}">
-                  {{ form.errors.translated_fields[field] | capitalize }}
-                  {{ form.errors.messages[field] }}
-                </a>
-              {%- endif -%}
-            </li>
-          {%- endfor -%}
-        </ul>
+        <div class="errors">
+						<ul>
+								{%- for field in form.errors -%}
+										{%- if field == 'form' -%}
+												<li>
+														{{ form.errors.messages[field] }}
+												</li>
+										{%- endif -%}
+								{%- endfor -%}
+						</ul>
+				</div>
       {%- endif -%}
       <div class="form-field">
         <input

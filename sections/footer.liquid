@@ -15,7 +15,10 @@
 		endif
 	endif
 %}
-<footer class="site-footer">
+<footer class="site-footer" style='background-color: #d10a11;'>
+<div style=" background-color:#9d9d9c; position: relative; width:400px;height: 100px;">
+    <p style="font-size: 30px; color:white; position: absolute;Right:0; padding-top: 25px; padding-right: 30px;" > TINY MEMORY</p>
+</div>
   {% for block in section.blocks %}
     {% if block.type == 'help_bar' %}
       {% liquid
@@ -58,6 +61,7 @@
     {% endif %}
   {% endfor %}
   <div class="site-footer__top color-{{ section.settings.color_schema }}">
+
     <div class="{{ container }}">
       <div class="f-flex flex-wrap" style="--column-gap: 3rem; --column-gap-mobile: 1rem;">
         {% for block in section.blocks %}
