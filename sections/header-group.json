@@ -1,1 +1,65 @@
-{"type":"header","name":"t:sections.header.name","sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"cbd9ab74-b3e0-43cf-b54f-d334def50220":{"type":"announcement","settings":{"text":"<p>Welcome to TINY MEMORY Store<\/p>","link":"","homepage_only":true,"hide_on_page":"","show_on_mobile":true,"show_on_tablet":true,"show_on_desktop":true}}},"block_order":["cbd9ab74-b3e0-43cf-b54f-d334def50220"],"custom_css":[".announcement-bar {background-color: #d10a11 !important; color: white;}"],"settings":{"color_schema":"background-1","show_close_button":true,"enable_carousel":true,"autoplay":true,"autorotate_speed":5}},"header":{"type":"header","settings":{"layout":"design-3","container":"container-fluid","sticky_header":true,"transparent_header":false,"logo":"shopify:\/\/shop_images\/cover_logo_black_txt_20337bf4-cfba-41ed-bb0c-78cae241f853.png","logo_width":50,"logo_mobile_width":110,"main_menu":"main-menu","mobile_menu":"","enable_mega_menu":true,"show_search":true,"show_cart":true,"show_account":true,"show_country_selector":true,"show_language_selector":true,"logo_mobile_position":"left","mobile_show_search":true,"mobile_show_cart":true,"mobile_show_account":true,"mobile_show_social":true}}},"order":["announcement-bar","header"]}
+{
+  "type": "header",
+  "name": "t:sections.header.name",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "cbd9ab74-b3e0-43cf-b54f-d334def50220": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>Welcome to TINY MEMORY Store<\/p>",
+            "link": "",
+            "homepage_only": true,
+            "hide_on_page": "",
+            "show_on_mobile": true,
+            "show_on_tablet": true,
+            "show_on_desktop": true
+          }
+        }
+      },
+      "block_order": [
+        "cbd9ab74-b3e0-43cf-b54f-d334def50220"
+      ],
+      "custom_css": [
+        ".announcement-bar {background-color: #d10a11 !important; color: white;}"
+      ],
+      "settings": {
+        "color_schema": "background-1",
+        "show_close_button": true,
+        "enable_carousel": true,
+        "autoplay": true,
+        "autorotate_speed": 5
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "layout": "design-5",
+        "container": "container-fluid",
+        "sticky_header": true,
+        "transparent_header": false,
+        "logo": "shopify:\/\/shop_images\/cover_logo_black_txt_20337bf4-cfba-41ed-bb0c-78cae241f853.png",
+        "logo_width": 50,
+        "logo_mobile_width": 110,
+        "main_menu": "main-menu",
+        "mobile_menu": "",
+        "enable_mega_menu": true,
+        "show_search": true,
+        "show_cart": true,
+        "show_account": true,
+        "show_country_selector": true,
+        "show_language_selector": true,
+        "logo_mobile_position": "left",
+        "mobile_show_search": true,
+        "mobile_show_cart": true,
+        "mobile_show_account": true,
+        "mobile_show_social": true
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}
