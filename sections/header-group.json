@@ -36,7 +36,7 @@
       "type": "header",
       "settings": {
         "layout": "design-4",
-        "container": "container-full",
+        "container": "container",
         "sticky_header": true,
         "transparent_header": false,
         "logo": "shopify:\/\/shop_images\/cover_logo_black_txt_20337bf4-cfba-41ed-bb0c-78cae241f853.png",
