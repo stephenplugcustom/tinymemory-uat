@@ -41,7 +41,7 @@
         "transparent_header": false,
         "logo": "shopify:\/\/shop_images\/cover_logo_black_txt_20337bf4-cfba-41ed-bb0c-78cae241f853.png",
         "logo_width": 50,
-        "logo_mobile_width": 30,
+        "logo_mobile_width": 50,
         "main_menu": "main-menu",
         "mobile_menu": "",
         "enable_mega_menu": true,
