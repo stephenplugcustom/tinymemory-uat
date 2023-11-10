@@ -1,0 +1,21 @@
+{% liquid 
+    assign type = block.settings.type | default: 'icon'
+    assign url = '/pages/wishlist'
+    assign text = 'layout.header.wishlist' | t
+%}
+
+{% if type == 'text' %}
+    {% capture markup %}
+        <a class="{{ link_class }}" href="{{ url }}">
+            <span>{{ text }}</span>
+        </a>
+    {% endcapture %}
+{% else %}
+    {% capture markup %}
+        <a class="{{ link_class }} tooltip-activator" href="{{ url }}">
+            {% render 'icon-star' %}
+            <span{% if type == 'icon' %} class="tooltip tooltip--bottom"{% endif %}>{{ text }}</span>
+        </a>
+    {% endcapture %}
+{% endif %}
+{{ markup }}

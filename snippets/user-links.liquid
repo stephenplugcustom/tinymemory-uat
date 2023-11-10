@@ -1,0 +1,34 @@
+{% liquid
+    assign type = block.settings.type | default: 'icon'
+    assign url = routes.account_login_url
+    assign text = 'layout.customer.log_in' | t
+    if customer
+        assign url = routes.account_url
+        assign text = 'layout.customer.account' | t
+    endif
+%}
+
+{% case type %}
+    {% when 'text' %}
+        {% capture markup %}
+            <a class="{{ link_class }}" href="{{ url }}">
+                <span>{{ text }}</span>
+            </a>
+        {% endcapture %}
+    {% when 'icon_w_text' %}
+        {% capture markup %}
+            <a class="{{ link_class }}" href="{{ url }}">
+                {% render "icon-user" %}
+                <span>{{ text }}</span>
+            </a>
+        {% endcapture %}
+    {% else %}
+        {% capture markup %}
+            <a class="{{ link_class }} btn--icon focus-inset tooltip-activator" href="{{ url }}">
+                <span class="visually-hidden">{{ text }}</span>
+                {% render "icon-user" %}
+                <span class="tooltip tooltip--bottom">{{ text }}</span>
+            </a>
+        {% endcapture %}
+{% endcase %}
+{{ markup }}

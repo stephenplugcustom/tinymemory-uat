@@ -1,0 +1,121 @@
+.f-scrolling-promotion {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.f-scrolling-promotion--left .f-promotion--animated {
+  animation-name: scrolling-left;
+}
+.f-scrolling-promotion--right .f-promotion--animated {
+  animation-name: scrolling-right;
+}
+.f-scrolling-promotion[data-pause-on-hover]:hover .f-promotion--animated, .f-scrolling-promotion--paused .f-promotion--animated {
+  animation-play-state: paused;
+}
+
+.f-promotion {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+.f-promotion__item {
+  margin: 0 calc(var(--item-gap-mobile) / 2);
+  display: flex;
+  align-items: center;
+}
+.f-promotion__item img,
+.f-promotion__item svg {
+  max-width: 100%;
+  width: auto;
+  height: calc(var(--image-height) * 0.75);
+}
+@media (min-width: 750px) {
+  .f-promotion__item img,
+  .f-promotion__item svg {
+    max-width: 100%;
+    height: var(--image-height);
+  }
+}
+.f-promotion__item .placeholder-svg {
+  background-color: #f7f7f7;
+}
+@media (min-width: 750px) {
+  .f-promotion__item {
+    margin: 0 calc(var(--item-gap) / 2);
+  }
+}
+.f-promotion__icon {
+  display: inline-flex;
+  line-height: 0;
+  margin-right: 10px;
+  --icon-height: 26px;
+}
+.f-promotion__icon--small {
+  --icon-height: 20px;
+}
+.f-promotion__icon--large {
+  --icon-height: 32px;
+}
+.f-promotion__icon svg,
+.f-promotion__icon img {
+  width: auto;
+  height: var(--icon-height);
+  max-width: var(--icon-height);
+  fill: currentColor;
+}
+.f-promotion__text {
+  color: inherit;
+  line-height: 1;
+  white-space: nowrap;
+  font-size: calc(var(--text-size) * 0.75);
+}
+@media (max-width: 750px) {
+  .f-promotion__text {
+    font-size: var(text-size);
+  }
+}
+.f-promotion--animated {
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: var(--duration);
+  animation-play-state: running;
+  width: max-content;
+  will-change: transform, width;
+}
+
+@keyframes scrolling-left {
+  0% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes scrolling-right {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes scrolling-left-rtl {
+  0% {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes scrolling-right-rtl {
+  0% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    transform: translate3d(100%, 0, 0);
+  }
+}

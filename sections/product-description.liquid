@@ -1,0 +1,37 @@
+<div style="text-align: center;">
+  <h1 style="width: 100%;">產品介紹</h1>
+  <h2 style="width: 100%;">
+    {{ product.description }}
+  </h2>
+</div>
+
+{% schema %}
+{
+    "name": "product-desc",
+    "settings": [
+        {
+            "id": "custom_text_title",
+            "type": "text",
+            "label": "Text box heading",
+            "default": "Title"
+        },
+        {
+            "id": "custom_text_body",
+            "type": "richtext",
+            "label": "Add custom text below",
+            "default": "<p>Add your text here</p>"
+        }
+    ],
+    "presets": [
+        {
+            "name": "product-desc"
+        }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
