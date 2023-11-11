@@ -98,15 +98,11 @@ endunless
         <tiny>
         <div class="site-header__left site-header__menu hidden md:flex">
           {% render 'header__search', section: section %}
-          {% render 'site-nav', section: section, menu_part: 'first' %}
+          {% render 'site-nav', section: section%}
         </div>
         <!-- <div class="site-header__center site-header__center--max flex items-center md:justify-center">
           {% render 'site-logo', section: section %}
         </div> -->
-        <div class="site-header__right">
-          {% render 'site-nav', section: section, menu_part: 'last' %}
-          {% render 'header__addons', section: section %}
-        </div>
       </div>
     </tiny>
       {% else %}
