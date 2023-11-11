@@ -17,8 +17,8 @@
         "e9010a18-c07b-4ed4-baed-9df794683226": {
           "type": "html",
           "settings": {
-            "heading": "GENERAL INFORMATION",
-            "liquid": "<style>\nul.no-bullets {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  color: white;\n}\nsite-footer__block-heading h6site-footer__block-heading h6 {\n    color: white;\n}\n\n<\/style>\n<ul class=\"no-bullets\">\n  <li>ABOUT US<\/li>\n  <li>CONTACT US<\/li>\n  <li>LOCATIONS<\/li>\n  <li>LOYALTY PROGRAM<\/li>\n<\/ul>",
+            "heading": "",
+            "liquid": "<style>\nul.no-bullets {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  color: white;\n}\nsite-footer__block-heading h6site-footer__block-heading h6 {\n    color: white;\n}\n\n<\/style>\n<div style='border-right: solid white;'>\n<ul class=\"no-bullets\">\n<p>GENERAL INFORMATION<\/p>\n  <li>ABOUT US<\/li>\n  <li>CONTACT US<\/li>\n  <li>LOCATIONS<\/li>\n  <li>LOYALTY PROGRAM<\/li>\n<\/ul>\n<\/div>",
             "width": 25,
             "open_default_collapsible_tab": false
           }
@@ -27,7 +27,7 @@
           "type": "html",
           "settings": {
             "heading": "",
-            "liquid": "<style>\nul.no-bullets {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n color: white;\n}\n<\/style>\n<div style='border-right: solid;'>\n<ul  class=\"no-bullets\">\n  <li>ORDER INFORMATION<\/li>\n  <li> <\/li>\n  <li>DELIVERY<\/li>\n  <li>RETURNS & EXCHANGES<\/li>\n  <li>ORDER STATUS<\/li>\n  <li>FAQ<\/li>\n<\/ul>\n<\/div>",
+            "liquid": "<style>\nul.no-bullets {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n color: white;\n}\n<\/style>\n<div style='border-right: solid white;'>\n<ul  class=\"no-bullets\">\n  <p>ORDER INFORMATION<\/p>\n  <li>DELIVERY<\/li>\n  <li>RETURNS & EXCHANGES<\/li>\n  <li>ORDER STATUS<\/li>\n  <li>FAQ<\/li>\n<\/ul>\n<\/div>",
             "width": 25,
             "open_default_collapsible_tab": false
           }
