@@ -16,7 +16,7 @@
         "94d26bcc-d64c-48be-8523-06ca952a594a": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{{product.price|money_with_currency}}"
+            "custom_liquid": "<p style=\"color:red\">\n{{ product.price | money }} HKD\n<\/p>"
           }
         },
         "b192b47f-5dba-452c-94dc-7edbf8359785": {
