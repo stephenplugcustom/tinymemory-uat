@@ -23,7 +23,7 @@
         "94d26bcc-d64c-48be-8523-06ca952a594a": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{{ 145 | money_with_currency }}"
+            "custom_liquid": "{{ product.price}}"
           }
         },
         "b192b47f-5dba-452c-94dc-7edbf8359785": {
