@@ -16,9 +16,8 @@ endunless
   }
 
   .site-header--sticky {
-    position: fixed ;
+    position: fixed;
   }
-
 </style>
 {% endif %}
 {% if sticky_header %}
@@ -102,17 +101,17 @@ endunless
         </div>
       </drawer-opener>
       <style>
-        .desktop-only{
-display: none;
-}
+        .desktop-only {
+          display: none;
+        }
 
-@media (min-width: 749px){
-.desktop-only{
-display: block;
-}
-}
+        @media (min-width: 749px) {
+          .desktop-only {
+            display: block;
+          }
+        }
       </style>
-      <tiny class="desktop-only" style="display: none; " >
+      <tiny class="desktop-only" >
         <div class="site-header__inner flex site-header__mobile-logo--{{ logo_mobile_position | default: 'center' }}"
           style="justify-content: center;">
           <div class="site-header__center site-header__menu hidden md:flex" style="justify-content: center;">
