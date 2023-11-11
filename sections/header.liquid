@@ -12,6 +12,15 @@
 {% if transparent_header %}
 <style>
   .f-section-header {position: absolute;}  .site-header--sticky {position: fixed;}
+  .desktop-only{
+  display: none;
+  }
+  
+@media (min-width: 749px){
+  .desktop-only{
+  display: block;
+  }
+  }
 </style>
 {% endif %}
 {% if sticky_header %}
