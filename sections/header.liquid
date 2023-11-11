@@ -101,10 +101,18 @@ endunless
           {% render 'header__addons', section: section %}
         </div>
       </drawer-opener>
-      <tiny class="desktop-only" style="display: none; @media (min-width: 749px){
+      <style>
         .desktop-only{
-        display: block;
-        }" >
+display: none;
+}
+
+@media (min-width: 749px){
+.desktop-only{
+display: block;
+}
+}
+      </style>
+      <tiny class="desktop-only" style="display: none; " >
         <div class="site-header__inner flex site-header__mobile-logo--{{ logo_mobile_position | default: 'center' }}"
           style="justify-content: center;">
           <div class="site-header__center site-header__menu hidden md:flex" style="justify-content: center;">
