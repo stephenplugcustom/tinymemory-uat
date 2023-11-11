@@ -16,7 +16,12 @@
         "94d26bcc-d64c-48be-8523-06ca952a594a": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<b style=\"font-size:30px; color:red\">\n{{ product.price | money }} HKD\n<\/b>"
+            "custom_liquid": "<b style=\"font-size:20px; color:red\">\n{{ product.price | money }} HKD\n<\/b>"
+          }
+        },
+        "7fd2a633-fe2c-469b-a6b4-95269f0d363d": {
+          "type": "divider",
+          "settings": {
           }
         },
         "b192b47f-5dba-452c-94dc-7edbf8359785": {
@@ -97,6 +102,7 @@
         "badge",
         "title",
         "94d26bcc-d64c-48be-8523-06ca952a594a",
+        "7fd2a633-fe2c-469b-a6b4-95269f0d363d",
         "b192b47f-5dba-452c-94dc-7edbf8359785",
         "rating",
         "variant_picker",
