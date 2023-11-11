@@ -108,6 +108,6 @@
   
   @media (min-width: 749px){
   .desktop-only{
-  display: block;
+  display: flex;
   }
   }
