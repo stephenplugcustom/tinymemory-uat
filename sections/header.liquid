@@ -95,6 +95,8 @@ endunless
             {% render 'icon-hamburger' %}
           </button>
         </drawer-opener>
+        <tiny>
+          123
         <div class="site-header__left site-header__menu hidden md:flex">
           {% render 'header__search', section: section %}
           {% render 'site-nav', section: section, menu_part: 'first' %}
@@ -107,7 +109,7 @@ endunless
           {% render 'header__addons', section: section %}
         </div>
       </div>
-
+    </tiny>
       {% else %}
       <div class="site-header__inner flex site-header__mobile-logo--{{ logo_mobile_position | default: 'center' }}">
         <drawer-opener class="mobile-nav-toggle hidden md-down:flex no-js-hidden" data-drawer="#Drawer-MobileNav">
