@@ -13,17 +13,10 @@
           "settings": {
           }
         },
-        "price": {
-          "type": "price",
-          "settings": {
-            "show_sale_badge": true,
-            "sale_badge_type": "percentage"
-          }
-        },
         "94d26bcc-d64c-48be-8523-06ca952a594a": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{{ product.price}}"
+            "custom_liquid": "{{ product.price|money_with_currency}}"
           }
         },
         "b192b47f-5dba-452c-94dc-7edbf8359785": {
@@ -103,7 +96,6 @@
       "block_order": [
         "badge",
         "title",
-        "price",
         "94d26bcc-d64c-48be-8523-06ca952a594a",
         "b192b47f-5dba-452c-94dc-7edbf8359785",
         "rating",
