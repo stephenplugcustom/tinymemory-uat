@@ -26,8 +26,8 @@
         "b623f19c-b584-4cc0-afc2-d4eb194b9701": {
           "type": "html",
           "settings": {
-            "heading": "ORDER INFORMATION",
-            "liquid": "<style>\nul.no-bullets {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\ncolor: white;\n}\n<\/style>\n<div>\n<ul  class=\"no-bullets\">\n  <li>DELIVERY<\/li>\n  <li>RETURNS & EXCHANGES<\/li>\n  <li>ORDER STATUS<\/li>\n  <li>FAQ<\/li>\n<\/ul>\n<\/div>",
+            "heading": "",
+            "liquid": "<style>\nul.no-bullets {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n color: white;\n}\n<\/style>\n<div style='border-right: solid;'>\n<ul  class=\"no-bullets\">\n  <li>ORDER INFORMATION<\/li>\n  <li> <\/li>\n  <li>DELIVERY<\/li>\n  <li>RETURNS & EXCHANGES<\/li>\n  <li>ORDER STATUS<\/li>\n  <li>FAQ<\/li>\n<\/ul>\n<\/div>",
             "width": 25,
             "open_default_collapsible_tab": false
           }
