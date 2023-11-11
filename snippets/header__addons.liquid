@@ -34,7 +34,9 @@
         </div>
     {% endif %}
     {% if mobile_show_search %}
-
+    <drawer-opener class="site-header__element site-header__open-search no-js-hidden sm:hidden" data-drawer="#Drawer-Search">
+     
+    </drawer-opener>
     {% endif %}
     {% liquid
         comment section.settings.show_search == 'show_as_input'
