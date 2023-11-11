@@ -88,27 +88,43 @@ endunless
         </div>
       </div>
       {% when 'design-5' %}
-      <div class="site-header__inner flex site-header__mobile-logo--{{ logo_mobile_position | default: 'left' }}">
-        <drawer-opener class="mobile-nav-toggle hidden md-down:flex no-js-hidden" data-drawer="#Drawer-MobileNav">
-          <button class="btn btn--plain btn--icon focus-inset" aria-haspopup="dialog"
-            aria-label="{{ 'layout.navigation.expand' | t }}">
-            {% render 'icon-hamburger' %}
-          </button>
-        </drawer-opener>
-        <tiny>
-        <div class="site-header__left site-header__menu hidden md:flex">
-          {% render 'header__search', section: section %}
-          {% render 'site-nav', section: section, menu_part: 'first' %}
-        </div>
-        <!-- <div class="site-header__center site-header__center--max flex items-center md:justify-center">
-          {% render 'site-logo', section: section %}
-        </div> -->
-        <div class="site-header__right">
-          {% render 'site-nav', section: section, menu_part: 'last' %}
+      <div class="site-header__left flex items-center" style="justify-content: center;">
+        {% render 'site-logo', section: section %}
+      </div>
+      <drawer-opener class="mobile-nav-toggle hidden md-down:flex no-js-hidden" data-drawer="#Drawer-MobileNav">
+        <button class="btn btn--plain btn--icon focus-inset" aria-haspopup="dialog"
+          aria-label="{{ 'layout.navigation.expand' | t }}">
+          {% render 'icon-hamburger' %}
+        </button>
+        <div style="display: flex; align-self: flex-end;">
           {% render 'header__addons', section: section %}
         </div>
-      </div>
-    </tiny>
+      </drawer-opener>
+      <style>
+        .desktop-only {
+          display: none;
+        }
+
+        @media (min-width: 749px) {
+          .desktop-only {
+            display: block;
+          }
+        }
+      </style>
+      <tiny class="desktop-only" >
+        <div class="site-header__inner flex site-header__mobile-logo--{{ logo_mobile_position | default: 'center' }}"
+          style="justify-content: center;">
+          <div class="site-header__center site-header__menu hidden md:flex" style="justify-content: center;">
+            {% render 'site-nav', section: section %}
+          </div>
+          <!-- set the item align to right -->
+          <div style="display: flex; align-self: flex-end;">
+            {% render 'header__addons', section: section %}
+          </div>
+        </div>
+
+      </tiny>
+
       {% else %}
       <div class="site-header__inner flex site-header__mobile-logo--{{ logo_mobile_position | default: 'center' }}">
         <drawer-opener class="mobile-nav-toggle hidden md-down:flex no-js-hidden" data-drawer="#Drawer-MobileNav">
