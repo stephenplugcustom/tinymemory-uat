@@ -33,7 +33,7 @@
             {% render 'language-selector', plain: true, class: 'site-header__link', form_id: form_id %}
         </div>
     {% endif %}
-    {% if mobile_show_search %}
+    {% if mobile_show_searchx %}
     <drawer-opener class="site-header__element site-header__open-search no-js-hidden sm:hidden" data-drawer="#Drawer-Search">
         <button class="btn btn--plain btn--icon site-header__search-toggle tooltip-activator site-header__link site-header__search-toggle-mobile" aria-label="{{ 'general.search.search' | t }}" aria-haspopup="dialog">
             <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="f-icon-svg f-icon-svg--medium f-icon-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
