@@ -35,7 +35,7 @@
     "header": {
       "type": "header",
       "settings": {
-        "layout": "design-5",
+        "layout": "design-1",
         "container": "container",
         "sticky_header": true,
         "transparent_header": false,
