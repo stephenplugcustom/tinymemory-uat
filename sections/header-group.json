@@ -45,7 +45,7 @@
         "main_menu": "main-menu",
         "mobile_menu": "",
         "enable_mega_menu": true,
-        "show_search": false,
+        "show_search": true,
         "show_cart": true,
         "show_account": true,
         "show_country_selector": true,
