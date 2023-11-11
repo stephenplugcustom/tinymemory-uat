@@ -105,19 +105,25 @@
           <div class="site-header__left flex items-center" style="justify-content: center;">
             {% render 'site-logo', section: section %}
           </div>
+          <drawer-opener
+          class="mobile-nav-toggle hidden md-down:flex no-js-hidden"
+          data-drawer="#Drawer-MobileNav"
+        >
+          <button
+            class="btn btn--plain btn--icon focus-inset"
+            aria-haspopup="dialog"
+            aria-label="{{ 'layout.navigation.expand' | t }}"
+          >
+            {% render 'icon-hamburger' %}
+          </button>
+        </drawer-opener>
           <div>
             <div class="site-header__inner flex site-header__mobile-logo--{{ logo_mobile_position | default: 'center' }}"
             style="justify-content: center;">
               <div class="site-header__center site-header__menu hidden md:flex" style="justify-content: center;">
                 {% render 'site-nav', section: section %}
               </div>
-              <button
-							class="btn btn--plain btn--icon focus-inset"
-							aria-haspopup="dialog"
-							aria-label="{{ 'layout.navigation.expand' | t }}"
-						>
-							{% render 'icon-hamburger' %}
-						</button>
+              
                 <!-- set the item align to right -->
                 <div style="display: flex; align-self: flex-end;">
                 {% render 'header__addons', section: section %}
