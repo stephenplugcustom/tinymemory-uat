@@ -114,6 +114,7 @@ endunless
       <tiny class="desktop-only" >
         <div class="site-header__inner flex site-header__mobile-logo--{{ logo_mobile_position | default: 'center' }}"
           style="justify-content: center;">
+          {% render 'header__search', section: section %}
           <div class="site-header__center site-header__menu hidden md:flex" style="justify-content: center;">
             {% render 'site-nav', section: section %}
           </div>
