@@ -101,7 +101,7 @@ endunless
           {% render 'header__addons', section: section %}
         </div>
       </drawer-opener>
-      <div class="desktop-only">
+      <tiny class="desktop-only">
         <div class="site-header__inner flex site-header__mobile-logo--{{ logo_mobile_position | default: 'center' }}"
           style="justify-content: center;">
           <div class="site-header__center site-header__menu hidden md:flex" style="justify-content: center;">
@@ -113,7 +113,7 @@ endunless
           </div>
         </div>
 
-      </div>
+      </tiny>
 
       {% else %}
       <div class="site-header__inner flex site-header__mobile-logo--{{ logo_mobile_position | default: 'center' }}">
