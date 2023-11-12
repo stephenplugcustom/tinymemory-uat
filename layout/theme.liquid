@@ -160,5 +160,15 @@
     {%- if request.design_mode -%}
       <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-  </body>
+  <script>
+                    var pod_is_new_file ='1';
+                 {% assign pod_is_new_file = '1' %}
+                 {% if pod_is_new_file == '1' %}
+                    {% render 'product_designer_config' %}
+                   {% else %}
+                   var product_config= {"product_data":[{"product_id":""}]}
+                var color_list= {"ColorList":[]}
+                  {% endif %}
+               </script>
+                </body>
 </html>
