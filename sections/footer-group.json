@@ -9,7 +9,7 @@
           "type": "html",
           "settings": {
             "heading": "",
-            "liquid": "<img style=\"width: 100px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0674\/9336\/3992\/files\/cover_logo_5c6f665c-63d6-40f8-a446-1b03ddb13908.png?v=1698168636\">\n\n<img style=\"width: 100px;\" src=\"https:\/\/www.tiny.com.hk\/Templates\/tiny\/images\/tiny_logo.png\">",
+            "liquid": "<img style=\"width: 100px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0674\/9336\/3992\/files\/cover_logo_5c6f665c-63d6-40f8-a446-1b03ddb13908.png?v=1698168636\">",
             "width": 20,
             "open_default_collapsible_tab": false
           }
