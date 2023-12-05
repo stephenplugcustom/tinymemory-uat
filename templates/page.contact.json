@@ -1,1 +1,75 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{}},"form":{"type":"contact-form","blocks":{"b772f03e-c993-4048-bff1-d50f7b4f4052":{"type":"name","settings":{"label":"Name","placeholder":"Enter your name","hide_label":true,"required":false}},"61823639-d6e6-4300-85bb-febd0ea30858":{"type":"email","settings":{"label":"Email","placeholder":"Enter your email","hide_label":true}},"1647c689-2baa-45af-8c2a-fb844e8b6ccb":{"type":"phone","settings":{"label":"Phone number","placeholder":"Enter your phone number","hide_label":true,"required":false}},"c053d41e-93dd-4083-b181-30bd0549343f":{"type":"message","settings":{"label":"Message","placeholder":"Enter your message","hide_label":true}}},"block_order":["b772f03e-c993-4048-bff1-d50f7b4f4052","61823639-d6e6-4300-85bb-febd0ea30858","1647c689-2baa-45af-8c2a-fb844e8b6ccb","c053d41e-93dd-4083-b181-30bd0549343f"],"settings":{"container":"container","color_schema":"background-1","heading":"Contact us","heading_size":"h2","description":"<p>Working hours: Monday-Friday, 7am-6pm<\/p>","form_width":500,"form_alignment":"center","button_label":"submit","button_style":"btn--primary","padding_top":80,"padding_bottom":80,"custom_id":"","custom_class":"","animations":"inherit"}}},"order":["main","form"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "blocks": {
+        "b772f03e-c993-4048-bff1-d50f7b4f4052": {
+          "type": "name",
+          "settings": {
+            "label": "Name",
+            "placeholder": "Enter your name",
+            "hide_label": true,
+            "required": false
+          }
+        },
+        "61823639-d6e6-4300-85bb-febd0ea30858": {
+          "type": "email",
+          "settings": {
+            "label": "Email",
+            "placeholder": "Enter your email",
+            "hide_label": true
+          }
+        },
+        "1647c689-2baa-45af-8c2a-fb844e8b6ccb": {
+          "type": "phone",
+          "settings": {
+            "label": "Phone number",
+            "placeholder": "Enter your phone number",
+            "hide_label": true,
+            "required": false
+          }
+        },
+        "c053d41e-93dd-4083-b181-30bd0549343f": {
+          "type": "message",
+          "settings": {
+            "label": "Message",
+            "placeholder": "Enter your message",
+            "hide_label": true
+          }
+        }
+      },
+      "block_order": [
+        "b772f03e-c993-4048-bff1-d50f7b4f4052",
+        "61823639-d6e6-4300-85bb-febd0ea30858",
+        "1647c689-2baa-45af-8c2a-fb844e8b6ccb",
+        "c053d41e-93dd-4083-b181-30bd0549343f"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-1",
+        "heading": "Contact us",
+        "heading_size": "h2",
+        "description": "<p>Working hours: Monday-Friday, 9:30am-6:30pm<\/p>",
+        "form_width": 500,
+        "form_alignment": "center",
+        "button_label": "submit",
+        "button_style": "btn--primary",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "form"
+  ]
+}
