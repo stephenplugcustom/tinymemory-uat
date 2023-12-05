@@ -127,7 +127,8 @@
           "type": "featured_collection",
           "settings": {
             "collection": "白爛貓",
-            "title": ""
+            "image": "shopify:\/\/shop_images\/MCD-001886.jpg",
+            "title": "白爛貓"
           }
         }
       },
