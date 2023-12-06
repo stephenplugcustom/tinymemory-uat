@@ -6,7 +6,7 @@
         "template--21360105259288__58876593-9b87-4500-aa0d-d706dbfb85d9-slide-1": {
           "type": "slide",
           "settings": {
-            "background": "shopify:\/\/shop_images\/IMG-20231114-WA0127.jpg",
+            "background": "shopify:\/\/shop_images\/gift-package-in-hand.jpg",
             "image_overlay_opacity": 0,
             "content_position": "center",
             "text_alignment": "center",
@@ -17,8 +17,8 @@
             "description": "",
             "button_text_1": "",
             "button_link_1": "",
-            "button_style_1": "btn--primary",
-            "button_size_1": "",
+            "button_style_1": "btn--underline",
+            "button_size_1": "btn--medium",
             "button_text_2": "",
             "button_link_2": "",
             "button_style_2": "btn--primary",
