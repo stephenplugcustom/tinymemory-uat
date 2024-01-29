@@ -8,7 +8,7 @@
         "cbd9ab74-b3e0-43cf-b54f-d334def50220": {
           "type": "announcement",
           "settings": {
-            "text": "<h6>Hi! Welcome to TINY MEMORY Store.<\/h6>",
+            "text": "<p>Hi ! Welcome to <strong>Tiny Memory <\/strong>Store. <\/p>",
             "link": "",
             "homepage_only": false,
             "hide_on_page": "",
