@@ -16,7 +16,7 @@
         "94d26bcc-d64c-48be-8523-06ca952a594a": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<b style=\"font-size:20px; color:red\">\n{% for variant in product.variants %}\n  <p>Variant Price: {{ variant.price | money }}<\/p>\n{% endfor %}\n HKD\n<\/b>"
+            "custom_liquid": "<b style=\"font-size:20px; color:red\">\n{{ current_variant.price | money }} HKD\n<\/b>"
           }
         },
         "7fd2a633-fe2c-469b-a6b4-95269f0d363d": {
