@@ -3,28 +3,6 @@
     "58876593-9b87-4500-aa0d-d706dbfb85d9": {
       "type": "slideshow",
       "blocks": {
-        "template--21360105259288__58876593-9b87-4500-aa0d-d706dbfb85d9-slide-1": {
-          "type": "slide",
-          "settings": {
-            "background": "shopify:\/\/shop_images\/gift-package-in-hand.jpg",
-            "image_overlay_opacity": 0,
-            "content_position": "center",
-            "text_alignment": "center",
-            "text_color": "#000000",
-            "title": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "description": "",
-            "button_text_1": "",
-            "button_link_1": "",
-            "button_style_1": "btn--underline",
-            "button_size_1": "btn--medium",
-            "button_text_2": "",
-            "button_link_2": "",
-            "button_style_2": "btn--primary",
-            "button_size_2": ""
-          }
-        },
         "template--21360105259288__58876593-9b87-4500-aa0d-d706dbfb85d9-slide-2": {
           "type": "slide",
           "settings": {
@@ -71,20 +49,19 @@
         }
       },
       "block_order": [
-        "template--21360105259288__58876593-9b87-4500-aa0d-d706dbfb85d9-slide-1",
         "template--21360105259288__58876593-9b87-4500-aa0d-d706dbfb85d9-slide-2",
         "template--21360105259288__58876593-9b87-4500-aa0d-d706dbfb85d9-slide-3"
       ],
       "settings": {
         "container": "container-fluid",
-        "slideshow_height": "small",
-        "show_dots": false,
-        "show_nav": false,
+        "slideshow_height": "adapt",
+        "show_dots": true,
+        "show_nav": true,
         "autoplay": true,
         "autorotate_speed": 3,
-        "pagination_style": "counter",
+        "pagination_style": "dots",
         "controls_position": "center",
-        "show_text_below": false,
+        "show_text_below": true,
         "text_alignment_mobile": "center",
         "accessibility_info": "Slideshow about our brand",
         "custom_id": "",

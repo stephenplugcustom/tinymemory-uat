@@ -4,7 +4,7 @@
     "section_header_alignment": "center",
     "section_header_alignment_mobile": "center",
     "page_transition": true,
-    "animations": "fade-in-up",
+    "animations": "fade-in-left",
     "color_primary": "#222222",
     "color_border": "#eeeeee",
     "color_body_text": "#222222",
