@@ -71,7 +71,7 @@
           "settings": {
             "deliver_text": "Estimated delivery:",
             "deliver_days": "7",
-            "shipping_text": "<p><strong>Free shipping<\/strong> on all orders over HKD $500<\/p>",
+            "shipping_text": "<p><strong>Free shipping<\/strong> on all orders over HKD $500<\/p><p><strong>For orders below HKD $500<\/strong>, a shipping fee of<strong> $25<\/strong> is required.<\/p>",
             "date_format": "%b %d"
           }
         },
