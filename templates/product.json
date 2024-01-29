@@ -13,12 +13,6 @@
           "settings": {
           }
         },
-        "custom_liquid_UpXWFm": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<p>Current Price: {{ product.selected_variant.price | money }}<\/p>"
-          }
-        },
         "price_TNCiLq": {
           "type": "price",
           "settings": {
@@ -114,7 +108,6 @@
       "block_order": [
         "badge",
         "title",
-        "custom_liquid_UpXWFm",
         "price_TNCiLq",
         "7fd2a633-fe2c-469b-a6b4-95269f0d363d",
         "b192b47f-5dba-452c-94dc-7edbf8359785",
