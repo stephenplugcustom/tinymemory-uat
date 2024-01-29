@@ -53,7 +53,7 @@
       ],
       "settings": {
         "container": "container-fluid",
-        "color_schema": "inverse",
+        "color_schema": "accent",
         "show_copyright": true,
         "enable_follow_on_shop": false,
         "show_social": true,
