@@ -121,6 +121,9 @@
         "shipping_return",
         "addons"
       ],
+      "custom_css": [
+        "#f-product-price-template--21484028100888__main{display:none;}"
+      ],
       "settings": {
         "container": "container-fluid",
         "show_breadcrumb": false,
