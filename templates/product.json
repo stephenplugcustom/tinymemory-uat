@@ -20,6 +20,12 @@
             "sale_badge_type": "text"
           }
         },
+        "custom_liquid_UpXWFm": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.selected_variant %}\n  <p>Current Price: {{ product.selected_variant.price | money }}<\/p>\n{% endif %}"
+          }
+        },
         "7fd2a633-fe2c-469b-a6b4-95269f0d363d": {
           "type": "divider",
           "settings": {
@@ -109,6 +115,7 @@
         "badge",
         "title",
         "price_TNCiLq",
+        "custom_liquid_UpXWFm",
         "7fd2a633-fe2c-469b-a6b4-95269f0d363d",
         "b192b47f-5dba-452c-94dc-7edbf8359785",
         "rating",
