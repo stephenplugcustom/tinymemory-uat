@@ -428,7 +428,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".f-price-item,.f-price-item--regular {color: red; font-weight: bold;}"
+      ".f-price-item,.f-price-item--regular {color: red; font-weight: bold; font-size:30px;}"
     ]
   }
 }
