@@ -53,13 +53,13 @@
       ],
       "settings": {
         "container": "container-fluid",
-        "color_schema": "background-1",
-        "show_copyright": false,
+        "color_schema": "inverse",
+        "show_copyright": true,
         "enable_follow_on_shop": false,
-        "show_social": false,
+        "show_social": true,
         "enable_country_selector": false,
-        "enable_language_selector": false,
-        "show_payments": false,
+        "enable_language_selector": true,
+        "show_payments": true,
         "animations": "inherit"
       }
     },
