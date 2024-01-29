@@ -86,9 +86,9 @@
                         {{ product.title | escape }}
                     </{% if is_featured_product == true %}h2{% else %}h1{% endif %}>
                 {%- when 'price' -%}
-                    <div id="f-product-price-{{ section.id }}" role="status">
-                        {%- render 'price', product: product, use_variant: true, show_sale_badge: block.settings.show_sale_badge, sale_badge_type: block.settings.sale_badge_type, show_soldout_badge: true, price_class: 'f-price--large text-lg sm:text-xl' -%}
-                        HKD
+                    <div id="f-product-price-{{ section.id }}" role="status" style="color: red; font-weight: bold; font-size: 20px;">
+                      {%- render 'price', product: product, use_variant: true, show_sale_badge: block.settings.show_sale_badge, sale_badge_type: block.settings.sale_badge_type, show_soldout_badge: true, price_class: 'f-price--large text-lg sm:text-xl' -%}
+                      HKD
                     </div>
                     {%- if shop.taxes_included -%}
                         <div class="f-product-single__block-tax text-subtext">
