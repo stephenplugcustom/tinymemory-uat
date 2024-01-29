@@ -9,7 +9,7 @@
           "type": "html",
           "settings": {
             "heading": "",
-            "liquid": "<img style=\"width: 100px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0674\/9336\/3992\/files\/cover_logo_5c6f665c-63d6-40f8-a446-1b03ddb13908.png?v=1698168636\">",
+            "liquid": "<img style=\"width: 100px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0674\/9336\/3992\/files\/Tiny_Memory_logo_430x.png?v=1706542499\">",
             "width": 20,
             "open_default_collapsible_tab": false
           }
@@ -53,7 +53,7 @@
       ],
       "settings": {
         "container": "container-fluid",
-        "color_schema": "accent",
+        "color_schema": "inverse",
         "show_copyright": true,
         "enable_follow_on_shop": false,
         "show_social": true,
