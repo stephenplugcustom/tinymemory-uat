@@ -8,7 +8,19 @@
         "cbd9ab74-b3e0-43cf-b54f-d334def50220": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Welcome to TINY MEMORY Store<\/p>",
+            "text": "<h6>Hi! Welcome to TINY MEMORY Store.<\/h6>",
+            "link": "",
+            "homepage_only": false,
+            "hide_on_page": "",
+            "show_on_mobile": true,
+            "show_on_tablet": true,
+            "show_on_desktop": true
+          }
+        },
+        "announcement_gpy6M8": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>Welcome to our store<\/p>",
             "link": "",
             "homepage_only": true,
             "hide_on_page": "",
@@ -19,7 +31,8 @@
         }
       },
       "block_order": [
-        "cbd9ab74-b3e0-43cf-b54f-d334def50220"
+        "cbd9ab74-b3e0-43cf-b54f-d334def50220",
+        "announcement_gpy6M8"
       ],
       "custom_css": [
         ".announcement-bar {background-color: #d10a11 !important; color: white;}"
