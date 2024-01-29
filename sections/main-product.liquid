@@ -14,116 +14,154 @@
     endif
   endif
 
-	assign enable_image_zoom = section.settings.enable_image_zoom | default: false
+  assign enable_image_zoom = section.settings.enable_image_zoom | default: false
 %}
-{%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
+{%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
 
 {%- if first_3d_model -%}
-    <link id="ModelViewerStyle" rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'">
+  <link
+    id="ModelViewerStyle"
+    rel="stylesheet"
+    href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css"
+    media="print"
+    onload="this.media='all'"
+  >
 {%- endif -%}
-<link id="ModalComponent" rel="stylesheet" href="{{ 'modal-component.css' | asset_url }}" media="print" onload="this.media='all'">
+<link
+  id="ModalComponent"
+  rel="stylesheet"
+  href="{{ 'modal-component.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'"
+>
 {%- if enable_image_zoom -%}
-	<link rel="stylesheet" href="{{ 'photoswipe-component.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'photoswipe-component.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 {% liquid
-    assign container = section.settings.container
-    assign media_size = section.settings.media_size
-    assign enable_sticky_info = section.settings.enable_sticky_info
+  assign container = section.settings.container
+  assign media_size = section.settings.media_size
+  assign enable_sticky_info = section.settings.enable_sticky_info
 
-		assign animation_effect = settings.animations
-		assign animated = false
-		if animation_effect != 'none'
-			assign animated = true
-		endif
+  assign animation_effect = settings.animations
+  assign animated = false
+  if animation_effect != 'none'
+    assign animated = true
+  endif
 %}
 {% if section.settings.show_breadcrumb %}
   {% render 'breadcrumb', container: section.settings.container, justify: 'center' %}
 {% endif %}
 <div
-    class="f-product-single"
-    data-section-type="main-product"
-    data-section-id="{{ section.id }}"
-    data-product-id="{{ product.id }}"
-    data-product-handle="{{ product.handle }}"
-    data-media-layout="{{ section.settings.media_layout }}"
+  class="f-product-single"
+  data-section-type="main-product"
+  data-section-id="{{ section.id }}"
+  data-product-id="{{ product.id }}"
+  data-product-handle="{{ product.handle }}"
+  data-media-layout="{{ section.settings.media_layout }}"
 >
-    <div class="{{ container }}">
-        <div class="f-flex flex-wrap f-single-product--media-{{ media_size }}{% unless product.media.size > 0 %} f-single-product--no-media{% endunless %}" style="--column-gap: 30px;">
-            <div class="f-column f-product__media-wrapper">
-                {% render 'product-media', section: section, first_3d_model: first_3d_model, enable_image_zoom: enable_image_zoom %}
-            </div>
-            <div 
-							class="f-column f-product-single__info md:flex-1{% if enable_sticky_info %} f-product-single__info--sticky{% endif %}{% if animated %} f-scroll-trigger animate--{{ animation_effect }}{% endif %}"
-							{% if animated %}
-								data-cascade
-							{% endif %}
-						>
-                {% render 'main-product-blocks', update_browser_history: true %}
-            </div>
-        </div>
+  <div class="{{ container }}">
+    <div
+      class="f-flex flex-wrap f-single-product--media-{{ media_size }}{% unless product.media.size > 0 %} f-single-product--no-media{% endunless %}"
+      style="--column-gap: 30px;"
+    >
+      <div class="f-column f-product__media-wrapper">
+        {% render 'product-media',
+          section: section,
+          first_3d_model: first_3d_model,
+          enable_image_zoom: enable_image_zoom
+        %}
+      </div>
+      <div
+        class="f-column f-product-single__info md:flex-1{% if enable_sticky_info %} f-product-single__info--sticky{% endif %}{% if animated %} f-scroll-trigger animate--{{ animation_effect }}{% endif %}"
+        {% if animated %}
+          data-cascade
+        {% endif %}
+      >
+        {% render 'main-product-blocks', update_browser_history: true %}
+      </div>
     </div>
+  </div>
 </div>
 {% if product.media.size > 0 %}
-    <script src="{{ 'product-media.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-media.js' | asset_url }}" defer="defer"></script>
 {% endif %}
 {%- if first_3d_model -%}
-    <script type="application/json" id="ModelJSON-{{ product.id }}">
-        {{ product.media | where: 'media_type', 'model' | json }}
-    </script>
-    <script src="{{ 'product-model.js' | asset_url }}" defer></script>
+  <script type="application/json" id="ModelJSON-{{ product.id }}">
+    {{ product.media | where: 'media_type', 'model' | json }}
+  </script>
+  <script src="{{ 'product-model.js' | asset_url }}" defer></script>
 {%- endif -%}
 {% if product.options_with_values.size > 0 %}
   <script src="{{ 'variants-picker.js' | asset_url }}" defer="defer"></script>
 {% endif %}
 {% if section.settings.enable_image_zoom %}
-	{%- liquid 
-		assign media_list = product.media | where: 'media_type', 'image'
-		assign wrapAround = false
-		assign cellAlign = 'left'
+  {%- liquid
+    assign media_list = product.media | where: 'media_type', 'image'
+    assign wrapAround = false
+    assign cellAlign = 'left'
     if enable_rtl
       assign cellAlign = 'right'
     endif
-		if media_list.size > 2
-			assign wrapAround = true
-		endif
-		if media_list.size == 1
-			assign cellAlign = 'center'
-		endif
-	-%}
-<product-modal id="ProductModal-{{ section.id }}" class="f-modal hidden media-modal" style="--modal-width: 100%">
-    <div class="f-modal__content" role="dialog" aria-label="{{ 'products.modal.label' | t }}" aria-modal="true" tabindex="-1">
+    if media_list.size > 2
+      assign wrapAround = true
+    endif
+    if media_list.size == 1
+      assign cellAlign = 'center'
+    endif
+  -%}
+  <product-modal id="ProductModal-{{ section.id }}" class="f-modal hidden media-modal" style="--modal-width: 100%">
+    <div
+      class="f-modal__content"
+      role="dialog"
+      aria-label="{{ 'products.modal.label' | t }}"
+      aria-modal="true"
+      tabindex="-1"
+    >
+      <div class="f-modal__inner">
+        <button
+          id="ModalClose-{{ section.id }}"
+          type="button"
+          class="f-modal__close"
+          aria-label="{{ 'accessibility.close' | t }}"
+        >
+          {% render 'icon-close' %}
+        </button>
         <div class="f-modal__inner">
-            <button id="ModalClose-{{ section.id }}" type="button" class="f-modal__close" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
-            <div class="f-modal__inner">
-                <div class="media-modal__content flex flex-col h-full" role="document" aria-label="{{ 'products.modal.label' | t }}" tabindex="0" data-media-loading>
-                    <flickity-component
-                        data-slider-options='{"pageDots": false, "cellAlign": "{{ cellAlign }}", "prevNextButtons": true, "adaptiveHeight": true, "setGallerySize": false, "dragThreshold": 10, "wrapAround": {{ wrapAround }}}'
-                        data-enable-slider="true"
-                        data-slider-columns="1"
-                        id="Modal-Media-Gallery-{{ section.id }}"
-                        class="media-modal__list h-full{% if media_list.size == 1 %} media-modal__list--has-only{% endif %}"
-                        role="list"
-                    >
-                        {%- liquid
-                            if product.selected_or_first_available_variant.featured_media != null
-                                assign media = product.selected_or_first_available_variant.featured_media
-                                render 'media', media: media, media_index: 0
-                            endif
-                        -%}
+          <div
+            class="media-modal__content flex flex-col h-full"
+            role="document"
+            aria-label="{{ 'products.modal.label' | t }}"
+            tabindex="0"
+            data-media-loading
+          >
+            <flickity-component
+              data-slider-options='{"pageDots": false, "cellAlign": "{{ cellAlign }}", "prevNextButtons": true, "adaptiveHeight": true, "setGallerySize": false, "dragThreshold": 10, "wrapAround": {{ wrapAround }}}'
+              data-enable-slider="true"
+              data-slider-columns="1"
+              id="Modal-Media-Gallery-{{ section.id }}"
+              class="media-modal__list h-full{% if media_list.size == 1 %} media-modal__list--has-only{% endif %}"
+              role="list"
+            >
+              {%- liquid
+                if product.selected_or_first_available_variant.featured_media != null
+                  assign media = product.selected_or_first_available_variant.featured_media
+                  render 'media', media: media, media_index: 0
+                endif
+              -%}
 
-                        {%- for media in media_list -%}
-                            {%- liquid
-                                unless media.id == product.selected_or_first_available_variant.featured_media.id
-                                    render 'media', media: media, media_index: forloop.index0
-                                endunless
-                            -%}
-                        {%- endfor -%}
-                    </flickity-component>
-                </div>
-            </div>
+              {%- for media in media_list -%}
+                {%- liquid
+                  unless media.id == product.selected_or_first_available_variant.featured_media.id
+                    render 'media', media: media, media_index: forloop.index0
+                  endunless
+                -%}
+              {%- endfor -%}
+            </flickity-component>
+          </div>
         </div>
+      </div>
     </div>
-</product-modal>
+  </product-modal>
 {% endif %}
 <script type="application/ld+json">
   {
@@ -153,7 +191,7 @@
             "sku": {{ variant.sku | json }},
           {%- endif -%}
           "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
-          "price" : {{ variant.price | divided_by: 100.00 | json }},
+          "price" : {{ variant.price | divided_by: 100.00 | money }},
           "priceCurrency" : {{ cart.currency.iso_code | json }},
           "url" : {{ shop.url | append: variant.url | json }}
         }{% unless forloop.last %},{% endunless %}
