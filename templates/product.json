@@ -3,13 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "price_TNCiLq": {
-          "type": "price",
-          "settings": {
-            "show_sale_badge": true,
-            "sale_badge_type": "text"
-          }
-        },
         "badge": {
           "type": "badge",
           "settings": {
@@ -18,6 +11,13 @@
         "title": {
           "type": "title",
           "settings": {
+          }
+        },
+        "price_TNCiLq": {
+          "type": "price",
+          "settings": {
+            "show_sale_badge": true,
+            "sale_badge_type": "text"
           }
         },
         "7fd2a633-fe2c-469b-a6b4-95269f0d363d": {
@@ -106,9 +106,9 @@
         }
       },
       "block_order": [
-        "price_TNCiLq",
         "badge",
         "title",
+        "price_TNCiLq",
         "7fd2a633-fe2c-469b-a6b4-95269f0d363d",
         "b192b47f-5dba-452c-94dc-7edbf8359785",
         "rating",
