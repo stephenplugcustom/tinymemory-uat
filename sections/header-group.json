@@ -17,10 +17,10 @@
             "show_on_desktop": true
           }
         },
-        "announcement_gpy6M8": {
+        "announcement_tWrt8G": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Welcome to our store<\/p>",
+            "text": "<p><strong>Free shipping <\/strong>on all orders over HKD $500<\/p>",
             "link": "",
             "homepage_only": true,
             "hide_on_page": "",
@@ -32,7 +32,7 @@
       },
       "block_order": [
         "cbd9ab74-b3e0-43cf-b54f-d334def50220",
-        "announcement_gpy6M8"
+        "announcement_tWrt8G"
       ],
       "custom_css": [
         ".announcement-bar {background-color: #d10a11 !important; color: white;}"
