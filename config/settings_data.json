@@ -428,7 +428,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "#f-product-price-template--21484028100888__main {color: red;}"
+      ".f-price-item, .f-price-item--regular {color: red;}"
     ]
   }
 }
