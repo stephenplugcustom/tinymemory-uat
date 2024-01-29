@@ -38,7 +38,7 @@
         ".announcement-bar {background-color: #d10a11 !important; color: white;}"
       ],
       "settings": {
-        "color_schema": "background-1",
+        "color_schema": "accent",
         "show_close_button": true,
         "enable_carousel": true,
         "autoplay": true,
