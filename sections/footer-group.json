@@ -28,11 +28,24 @@
             "button_link": "",
             "button_style": "btn--underline"
           }
+        },
+        "column_ytBgPh": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "運送時間",
+            "heading_size": "h3",
+            "text": "<p>當我們確認接受你的訂單，我們會預備你的訂單及盡快出貨。<br\/>最快可於10－14工作天收貨。(公眾假期除外以及視乎地區而定)<\/p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "btn--underline"
+          }
         }
       },
       "block_order": [
         "column_M8mr3D",
-        "column_KFLBzi"
+        "column_KFLBzi",
+        "column_ytBgPh"
       ],
       "settings": {
         "container": "container",
@@ -69,7 +82,7 @@
           "type": "html",
           "settings": {
             "heading": "About Tiny Memory",
-            "liquid": "<style>\nul.no-bullets {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  color: white;\n}\nsite-footer__block-heading h6site-footer__block-heading h6 {\n    color: white;\n}\n.t_f{\nfont-family: sans-serif; font-size: 15px;\nmargin: 2px 0;\/\/line space\n}\n\n<\/style>\n<div style='border-right: solid white;' >\n<ul class=\"no-bullets\">\n<p>GENERAL INFORMATION<\/p>\n  <li class='t_f'>ABOUT US<\/li>\n  <li class='t_f'>CONTACT US<\/li>\n  <li class='t_f'>LOCATIONS<\/li>\n  <li class='t_f'>LOYALTY PROGRAM<\/li>\n<\/ul>\n<\/div>",
+            "liquid": "<style>\nul.no-bullets {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  color: white;\n}\nsite-footer__block-heading h6site-footer__block-heading h6 {\n    color: white;\n}\n\n<\/style>\n<div style='border-right: solid white;'>\n<ul class=\"no-bullets\">\n<p>GENERAL INFORMATION<\/p>\n  <li>ABOUT US<\/li>\n  <li>CONTACT US<\/li>\n  <li>LOCATIONS<\/li>\n  <li>LOYALTY PROGRAM<\/li>\n<\/ul>\n<\/div>",
             "width": 30,
             "open_default_collapsible_tab": false
           }
