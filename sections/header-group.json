@@ -20,7 +20,7 @@
         "announcement_tWrt8G": {
           "type": "announcement",
           "settings": {
-            "text": "<p><strong>Free shipping <\/strong>on all orders over HKD $500<\/p>",
+            "text": "<p><strong>Free shipping <\/strong>on all orders over HKD $350<\/p>",
             "link": "",
             "homepage_only": true,
             "hide_on_page": "",
