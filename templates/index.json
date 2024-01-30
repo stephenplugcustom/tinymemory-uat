@@ -115,45 +115,10 @@
         "custom_class": "",
         "animations": "inherit"
       }
-    },
-    "983cc490-7a40-4eff-aa15-d1c7130c53b4": {
-      "type": "handpicked-products",
-      "settings": {
-        "container": "container",
-        "color_schema": "background-1",
-        "heading": "熱銷款式",
-        "heading_size": "h2",
-        "description": "",
-        "product_list": [
-          "pawsome-island-t-shirt-a",
-          "pawsome-island-保溫瓶-a",
-          "九巴重機-500毫升保溫瓶",
-          "九巴重機-衛衣001",
-          "香港景搜-陶瓷杯a"
-        ],
-        "limit": 5,
-        "columns": 5,
-        "column_gap": "medium",
-        "pcard_image_ratio": "1\/1",
-        "show_vendor": false,
-        "enable_slider": true,
-        "show_nav": true,
-        "show_dots": false,
-        "button_label": "",
-        "button_url": "",
-        "button_style": "btn--primary",
-        "enable_swipe_mobile": false,
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "custom_id": "",
-        "custom_class": "",
-        "animations": "inherit"
-      }
     }
   },
   "order": [
     "58876593-9b87-4500-aa0d-d706dbfb85d9",
-    "c3a1612a-3ef7-4c3c-8dfd-4ce07145df32",
-    "983cc490-7a40-4eff-aa15-d1c7130c53b4"
+    "c3a1612a-3ef7-4c3c-8dfd-4ce07145df32"
   ]
 }
