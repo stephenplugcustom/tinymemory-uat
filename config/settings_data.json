@@ -50,6 +50,7 @@
     "social_instagram_link": "https:\/\/www.instagram.com\/hktiny.memory\/",
     "social_whatsapp_link": "https:\/\/api.whatsapp.com\/send\/?phone=85256332221",
     "currency_code_enabled": false,
+    "cb_design_mode": true,
     "fluid_container_width": 1330,
     "fluid_offset": 55,
     "narrow_container_width": 800,
