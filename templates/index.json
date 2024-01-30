@@ -128,7 +128,7 @@
     "983cc490-7a40-4eff-aa15-d1c7130c53b4": {
       "type": "handpicked-products",
       "settings": {
-        "container": "container-fluid",
+        "container": "container",
         "color_schema": "background-1",
         "heading": "熱銷款式",
         "heading_size": "h2",
@@ -140,8 +140,8 @@
           "九巴重機-衛衣001",
           "香港景搜-陶瓷杯a"
         ],
-        "limit": 5,
-        "columns": 5,
+        "limit": 6,
+        "columns": 6,
         "column_gap": "medium",
         "pcard_image_ratio": "1\/1",
         "show_vendor": false,
