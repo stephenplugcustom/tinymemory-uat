@@ -71,7 +71,7 @@
           "settings": {
             "deliver_text": "預計運送時間：",
             "deliver_days": "7",
-            "shipping_text": "<p>消費滿港幣350元或以上可享免運費<\/p><p><strong>For orders below HKD $350<\/strong>, a shipping fee of<strong> $25<\/strong> is required.<\/p>",
+            "shipping_text": "<p>消費滿港幣350元或以上可享免運費<\/p><p>訂單不足港幣350元需付運費25元<\/p>",
             "date_format": "%b %d"
           }
         },
