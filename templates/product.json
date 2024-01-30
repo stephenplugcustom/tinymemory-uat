@@ -133,8 +133,8 @@
     "935602a5-5980-434f-900e-37b07fc9a902": {
       "type": "product-description",
       "settings": {
-        "custom_text_title": "Title",
-        "custom_text_body": "<p>Add your text here<\/p>"
+        "custom_text_title": "產品介紹",
+        "custom_text_body": "<h5>1. 可客製卡牌與卡盒名稱,卡牌與卡盒的客製名稱是<span style=\"text-decoration:underline\">相同<\/span><br\/>2. 情人節限定盒<br\/>3. 設計及包裝上有任何更改，本公司不作另行通知。<br\/>4. 如有任何爭議，本公司保留最終決定權。<\/h5>"
       }
     },
     "product-recommendations": {
