@@ -69,9 +69,9 @@
         "shipping": {
           "type": "shipping",
           "settings": {
-            "deliver_text": "預計運送時間：",
+            "deliver_text": "Estimated delivery:",
             "deliver_days": "7",
-            "shipping_text": "<p>消費滿<strong>港幣350元<\/strong>或以上可享<strong>免運費<\/strong><\/p><p>訂單<strong>不足港幣350元<\/strong>需付運費<strong>25元<\/strong><\/p>",
+            "shipping_text": "<p><strong>Free shipping<\/strong> on all orders over HKD $350.<\/p><p><strong>For orders below HKD $350<\/strong>, a shipping fee of<strong> $25<\/strong> is required.<\/p>",
             "date_format": "%b %d"
           }
         },
@@ -134,7 +134,7 @@
       "type": "product-description",
       "settings": {
         "custom_text_title": "產品介紹",
-        "custom_text_body": "<h5>1. 可客製卡牌與卡盒名稱,卡牌與卡盒的客製名稱是<span style=\"text-decoration:underline\">相同<\/span><br\/>2. 情人節限定盒<br\/>3. 設計及包裝上有任何更改，本公司不作另行通知。<br\/>4. 如有任何爭議，本公司保留最終決定權。<\/h5>"
+        "custom_text_body": "<h1>1. 可客製卡牌與卡盒名稱,卡牌與卡盒的客製名稱是<span style=\"text-decoration:underline\">相同<\/span><br\/>2. 情人節限定盒<br\/>3. 設計及包裝上有任何更改，本公司不作另行通知。<br\/>4. 如有任何爭議，本公司保留最終決定權。<\/h1>"
       }
     },
     "product-recommendations": {
