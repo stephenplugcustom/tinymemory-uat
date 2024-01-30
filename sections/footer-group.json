@@ -9,7 +9,7 @@
           "type": "html",
           "settings": {
             "heading": "",
-            "liquid": "<img style=\"width: 100px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0674\/9336\/3992\/files\/Tiny_Memory_logo_430x.png?v=1706542499\">",
+            "liquid": "<img style=\"width: 100px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0674\/9336\/3992\/files\/logo_1_430x.png?v=1706589328\"><img style=\"width: 100px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0674\/9336\/3992\/files\/logo_2_430x.png?v=1706589347\">",
             "width": 20,
             "open_default_collapsible_tab": false
           }
