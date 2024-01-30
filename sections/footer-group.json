@@ -9,9 +9,9 @@
           "type": "column",
           "settings": {
             "image_link": "",
-            "title": "Column",
+            "title": "免運費",
             "heading_size": "h3",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<h4>訂單買滿$350，即免運費。<\/h4>",
             "button_text": "",
             "button_link": "",
             "button_style": "btn--underline"
@@ -21,33 +21,9 @@
           "type": "column",
           "settings": {
             "image_link": "",
-            "title": "Column",
+            "title": "$25運費",
             "heading_size": "h3",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_text": "",
-            "button_link": "",
-            "button_style": "btn--underline"
-          }
-        },
-        "column_PdMjRt": {
-          "type": "column",
-          "settings": {
-            "image_link": "",
-            "title": "Column",
-            "heading_size": "h3",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_text": "",
-            "button_link": "",
-            "button_style": "btn--underline"
-          }
-        },
-        "column_NHarpk": {
-          "type": "column",
-          "settings": {
-            "image_link": "",
-            "title": "Column",
-            "heading_size": "h3",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<h5>訂單低於$350，需付$25運費。<\/h5>",
             "button_text": "",
             "button_link": "",
             "button_style": "btn--underline"
@@ -56,16 +32,14 @@
       },
       "block_order": [
         "column_M8mr3D",
-        "column_KFLBzi",
-        "column_PdMjRt",
-        "column_NHarpk"
+        "column_KFLBzi"
       ],
       "settings": {
         "container": "container",
         "color_schema": "background-1",
         "heading": "運送方式",
         "heading_size": "h2",
-        "description": "<p>Tiny Memory 與順豐速運合作，提供[上門]或[自提點自取]服務。你可以於結帳時按需要選擇其一運送方式。<br\/>訂單買滿$350，即免運費。<br\/>訂單低於$350，需付$25運費。<\/p>",
+        "description": "<p>Tiny Memory 與順豐速運合作，提供[上門]或[自提點自取]服務。你可以於結帳時按需要選擇其一運送方式。<br\/><\/p>",
         "layout": "vertical",
         "text_alignment": "left",
         "image_width": "fullwidth",
