@@ -79,7 +79,7 @@
           "type": "collapsible_tab",
           "settings": {
             "icon": "none",
-            "heading": "Product description",
+            "heading": "產品資訊",
             "content": "",
             "liquid": "{{product.description}}",
             "page": "",
