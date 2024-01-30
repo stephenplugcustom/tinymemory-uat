@@ -134,7 +134,7 @@
       "type": "product-description",
       "settings": {
         "custom_text_title": "產品介紹",
-        "custom_text_body": "<h1>1. 可客製卡牌與卡盒名稱,卡牌與卡盒的客製名稱是<span style=\"text-decoration:underline\">相同<\/span><br\/>2. 情人節限定盒<br\/>3. 設計及包裝上有任何更改，本公司不作另行通知。<br\/>4. 如有任何爭議，本公司保留最終決定權。<\/h1>"
+        "custom_text_body": "<h6>1. 可客製卡牌與卡盒名稱,卡牌與卡盒的客製名稱是<span style=\"text-decoration:underline\">相同<\/span><br\/>2. 情人節限定盒<br\/>3. 設計及包裝上有任何更改，本公司不作另行通知。<br\/>4. 如有任何爭議，本公司保留最終決定權。<\/h6>"
       }
     },
     "product-recommendations": {
