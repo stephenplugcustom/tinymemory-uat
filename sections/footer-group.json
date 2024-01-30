@@ -37,7 +37,7 @@
           "settings": {
             "heading": "Terms",
             "liquid": "<div style=\"position: relative; width:400px;height: 200px;\">\n    <h6 style=\"color:white; position: absolute; bottom: 0;\"><\/h6>\n<\/div>",
-            "width": 30,
+            "width": 18,
             "open_default_collapsible_tab": false
           }
         }
