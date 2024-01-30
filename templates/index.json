@@ -85,20 +85,11 @@
             "collection": "edo",
             "title": ""
           }
-        },
-        "c5f1bcde-1f1c-4b85-8c7d-ce02ace81260": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "白爛貓",
-            "image": "shopify:\/\/shop_images\/MCD-001886.jpg",
-            "title": "白爛貓"
-          }
         }
       },
       "block_order": [
         "7662e288-0a45-4246-bac3-98fdd647e79a",
-        "d3f6f384-f988-422b-9de3-67dd1a07e30d",
-        "c5f1bcde-1f1c-4b85-8c7d-ce02ace81260"
+        "d3f6f384-f988-422b-9de3-67dd1a07e30d"
       ],
       "settings": {
         "container": "container-fluid",
