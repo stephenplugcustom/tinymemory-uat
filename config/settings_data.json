@@ -1,7 +1,7 @@
 {
   "current": {
     "container_width": 1340,
-    "section_header_alignment": "center",
+    "section_header_alignment": "left",
     "section_header_alignment_mobile": "center",
     "page_transition": true,
     "animations": "fade-in-left",

@@ -11,7 +11,7 @@
             "content_position": "center",
             "text_alignment": "center",
             "text_color": "#222222",
-            "title": "喜劇之王",
+            "title": "",
             "heading_size": "h2",
             "subheading": "",
             "description": "",
@@ -20,9 +20,9 @@
             "button_style_1": "btn--primary",
             "button_size_1": "",
             "button_text_2": "",
-            "button_link_2": "",
+            "button_link_2": "shopify:\/\/collections\/喜劇之王",
             "button_style_2": "btn--primary",
-            "button_size_2": ""
+            "button_size_2": "btn--small"
           }
         },
         "slide_GP9yye": {
@@ -33,7 +33,7 @@
             "content_position": "center",
             "text_alignment": "center",
             "text_color": "#000000",
-            "title": "喜劇之王",
+            "title": "",
             "heading_size": "h2",
             "subheading": "",
             "description": "",
@@ -60,7 +60,7 @@
         "autoplay": true,
         "autorotate_speed": 3,
         "pagination_style": "dots",
-        "controls_position": "center",
+        "controls_position": "right",
         "show_text_below": true,
         "text_alignment_mobile": "center",
         "accessibility_info": "Slideshow about our brand",
