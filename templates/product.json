@@ -86,17 +86,6 @@
             "default_open": false
           }
         },
-        "shipping_return": {
-          "type": "collapsible_tab",
-          "settings": {
-            "icon": "none",
-            "heading": "Collapsible tab",
-            "content": "",
-            "liquid": "",
-            "page": "",
-            "default_open": false
-          }
-        },
         "addons": {
           "type": "addons",
           "settings": {
@@ -118,7 +107,6 @@
         "buy_buttons",
         "shipping",
         "product_description",
-        "shipping_return",
         "addons"
       ],
       "custom_css": [
