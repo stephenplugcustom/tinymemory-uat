@@ -23,7 +23,7 @@
             "image_link": "",
             "title": "$25運費",
             "heading_size": "h3",
-            "text": "<h5>訂單低於$350，需付$25運費。<\/h5>",
+            "text": "<h4>訂單低於$350，需付$25運費。<\/h4>",
             "button_text": "",
             "button_link": "",
             "button_style": "btn--underline"
