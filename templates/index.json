@@ -99,8 +99,8 @@
         "template--21360105259288__58876593-9b87-4500-aa0d-d706dbfb85d9-slide-3"
       ],
       "settings": {
-        "container": "container-full",
-        "slideshow_height": "adapt",
+        "container": "container-fluid",
+        "slideshow_height": "medium",
         "show_dots": true,
         "show_nav": true,
         "autoplay": true,
