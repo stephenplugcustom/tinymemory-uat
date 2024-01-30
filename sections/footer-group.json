@@ -17,9 +17,9 @@
         "e9010a18-c07b-4ed4-baed-9df794683226": {
           "type": "html",
           "settings": {
-            "heading": "",
+            "heading": "About Tiny Memory",
             "liquid": "<style>\nul.no-bullets {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  color: white;\n}\nsite-footer__block-heading h6site-footer__block-heading h6 {\n    color: white;\n}\n\n<\/style>\n<div style='border-right: solid white;'>\n<ul class=\"no-bullets\">\n<p>GENERAL INFORMATION<\/p>\n  <li>ABOUT US<\/li>\n  <li>CONTACT US<\/li>\n  <li>LOCATIONS<\/li>\n  <li>LOYALTY PROGRAM<\/li>\n<\/ul>\n<\/div>",
-            "width": 25,
+            "width": 30,
             "open_default_collapsible_tab": false
           }
         },
@@ -35,9 +35,9 @@
         "4e715f07-6e01-4249-9f3f-73b6fa162b6a": {
           "type": "html",
           "settings": {
-            "heading": "SUBSCRIBE - 10% OFF | FREE GIVEAWAYS",
+            "heading": "Terms",
             "liquid": "<div style=\"position: relative; width:400px;height: 200px;\">\n    <h6 style=\"color:white; position: absolute; bottom: 0;\"><\/h6>\n<\/div>",
-            "width": 19,
+            "width": 30,
             "open_default_collapsible_tab": false
           }
         }
