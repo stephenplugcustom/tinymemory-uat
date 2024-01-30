@@ -85,7 +85,7 @@
           "show_on_desktop": true,
           "show_on_mobile": true,
           "show_atc_button": true,
-          "show_dynamic_checkout_buttons": false,
+          "show_dynamic_checkout_buttons": true,
           "show_quantity": true
         }
       },
