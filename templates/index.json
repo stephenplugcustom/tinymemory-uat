@@ -46,11 +46,57 @@
             "button_style_2": "btn--primary",
             "button_size_2": ""
           }
+        },
+        "slide_kE76Vw": {
+          "type": "slide",
+          "settings": {
+            "background": "shopify:\/\/shop_images\/22_copy.png",
+            "image_overlay_opacity": 0,
+            "content_position": "center",
+            "text_alignment": "center",
+            "text_color": "#000000",
+            "title": "Image slide",
+            "heading_size": "h1",
+            "subheading": "",
+            "description": "<p>Tell your brand's story through images<\/p>",
+            "button_text_1": "Button label",
+            "button_link_1": "",
+            "button_style_1": "btn--primary",
+            "button_size_1": "",
+            "button_text_2": "",
+            "button_link_2": "",
+            "button_style_2": "btn--primary",
+            "button_size_2": ""
+          }
+        },
+        "slide_GP9yye": {
+          "type": "slide",
+          "settings": {
+            "background": "shopify:\/\/shop_images\/11_copy.png",
+            "image_overlay_opacity": 0,
+            "content_position": "center",
+            "text_alignment": "center",
+            "text_color": "#000000",
+            "title": "Image slide",
+            "heading_size": "h1",
+            "subheading": "",
+            "description": "<p>Tell your brand's story through images<\/p>",
+            "button_text_1": "Button label",
+            "button_link_1": "",
+            "button_style_1": "btn--primary",
+            "button_size_1": "",
+            "button_text_2": "",
+            "button_link_2": "",
+            "button_style_2": "btn--primary",
+            "button_size_2": ""
+          }
         }
       },
       "block_order": [
         "template--21360105259288__58876593-9b87-4500-aa0d-d706dbfb85d9-slide-2",
-        "template--21360105259288__58876593-9b87-4500-aa0d-d706dbfb85d9-slide-3"
+        "template--21360105259288__58876593-9b87-4500-aa0d-d706dbfb85d9-slide-3",
+        "slide_kE76Vw",
+        "slide_GP9yye"
       ],
       "settings": {
         "container": "container-full",
