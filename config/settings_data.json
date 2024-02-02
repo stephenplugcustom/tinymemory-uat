@@ -39,7 +39,7 @@
     "cart_default_country": "Hong Kong",
     "show_free_shipping_message": true,
     "free_shipping_message": "Spend {{amount}} more for free shipping",
-    "free_shipping_limit": "300",
+    "free_shipping_limit": "350",
     "pcard_image_ratio": "1\/1",
     "pcard_show_second_img": true,
     "pcard_show_color_swatch": true,
