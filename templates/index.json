@@ -81,7 +81,7 @@
         "show_dots": true,
         "show_nav": true,
         "autoplay": true,
-        "autorotate_speed": 3,
+        "autorotate_speed": 2,
         "pagination_style": "dots",
         "controls_position": "right",
         "show_text_below": true,
@@ -91,9 +91,46 @@
         "custom_class": "",
         "enable_bg_zoom_effect": true
       }
+    },
+    "image_comparison_ikji9z": {
+      "type": "image-comparison",
+      "blocks": {
+        "image_Tj6AtL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1473wood_1.png",
+            "heading": ""
+          }
+        },
+        "image_mDXe9d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1473_copy_1.png",
+            "heading": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Tj6AtL",
+        "image_mDXe9d"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-1",
+        "heading": "Puzzle",
+        "heading_size": "h2",
+        "description": "",
+        "layout": "horizontal",
+        "image_height": "adapt",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "custom_id": "",
+        "custom_class": ""
+      }
     }
   },
   "order": [
-    "58876593-9b87-4500-aa0d-d706dbfb85d9"
+    "58876593-9b87-4500-aa0d-d706dbfb85d9",
+    "image_comparison_ikji9z"
   ]
 }
