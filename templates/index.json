@@ -89,7 +89,7 @@
         "accessibility_info": "",
         "custom_id": "",
         "custom_class": "",
-        "enable_bg_zoom_effect": false
+        "enable_bg_zoom_effect": true
       }
     }
   },
