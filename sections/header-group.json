@@ -20,7 +20,7 @@
         "announcement_tWrt8G": {
           "type": "announcement",
           "settings": {
-            "text": "<p><strong>*網店開張優惠* 即日起買滿<\/strong><em><strong>$350<\/strong><\/em><strong>,免運費!!<\/strong><\/p>",
+            "text": "<p><strong>*網店開張優惠* 即日起買滿<\/strong><em><strong>$350<\/strong><\/em><strong>,免運費!<\/strong><\/p>",
             "link": "",
             "homepage_only": true,
             "hide_on_page": "",
