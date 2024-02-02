@@ -77,7 +77,7 @@
       ],
       "settings": {
         "container": "container-full",
-        "slideshow_height": "adapt",
+        "slideshow_height": "medium",
         "show_dots": true,
         "show_nav": true,
         "autoplay": true,
