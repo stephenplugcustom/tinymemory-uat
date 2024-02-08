@@ -123,7 +123,7 @@
       ],
       "settings": {
         "container": "container-fluid",
-        "slideshow_height": "small",
+        "slideshow_height": "adapt",
         "show_dots": true,
         "show_nav": true,
         "autoplay": true,
