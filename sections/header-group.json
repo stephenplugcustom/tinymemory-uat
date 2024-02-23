@@ -40,12 +40,25 @@
             "show_on_tablet": true,
             "show_on_desktop": true
           }
+        },
+        "announcement_DbrYk8": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>元宵佳節限定優惠88折,優惠碼： loveubb2024<\/p>",
+            "link": "",
+            "homepage_only": true,
+            "hide_on_page": "",
+            "show_on_mobile": true,
+            "show_on_tablet": true,
+            "show_on_desktop": true
+          }
         }
       },
       "block_order": [
         "cbd9ab74-b3e0-43cf-b54f-d334def50220",
         "announcement_tWrt8G",
-        "announcement_jAaEfe"
+        "announcement_jAaEfe",
+        "announcement_DbrYk8"
       ],
       "custom_css": [
         ".announcement-bar {background-color: #d10a11 !important; color: white;}"
