@@ -68,7 +68,7 @@
         "show_close_button": true,
         "enable_carousel": true,
         "autoplay": true,
-        "autorotate_speed": 5
+        "autorotate_speed": 3
       }
     },
     "header": {
