@@ -29,18 +29,6 @@
             "show_on_desktop": true
           }
         },
-        "announcement_jAaEfe": {
-          "type": "announcement",
-          "settings": {
-            "text": "<p>由於二月公眾假期較多，生產及物流均於公眾假期休息，產品於二月內發貨。<\/p>",
-            "link": "",
-            "homepage_only": true,
-            "hide_on_page": "",
-            "show_on_mobile": true,
-            "show_on_tablet": true,
-            "show_on_desktop": true
-          }
-        },
         "announcement_DbrYk8": {
           "type": "announcement",
           "settings": {
@@ -57,7 +45,6 @@
       "block_order": [
         "cbd9ab74-b3e0-43cf-b54f-d334def50220",
         "announcement_tWrt8G",
-        "announcement_jAaEfe",
         "announcement_DbrYk8"
       ],
       "custom_css": [
