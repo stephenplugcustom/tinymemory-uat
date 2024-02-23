@@ -3,28 +3,6 @@
     "58876593-9b87-4500-aa0d-d706dbfb85d9": {
       "type": "slideshow",
       "blocks": {
-        "slide_JnVjH7": {
-          "type": "slide",
-          "settings": {
-            "background": "shopify:\/\/shop_images\/TM_Poster_2-01.jpg",
-            "image_overlay_opacity": 0,
-            "content_position": "center",
-            "text_alignment": "center",
-            "text_color": "#000000",
-            "title": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "description": "",
-            "button_text_1": "",
-            "button_link_1": "",
-            "button_style_1": "btn--primary",
-            "button_size_1": "",
-            "button_text_2": "",
-            "button_link_2": "",
-            "button_style_2": "btn--primary",
-            "button_size_2": ""
-          }
-        },
         "slide_kE76Vw": {
           "type": "slide",
           "settings": {
@@ -115,7 +93,6 @@
         }
       },
       "block_order": [
-        "slide_JnVjH7",
         "slide_kE76Vw",
         "slide_GP9yye",
         "slide_Jexp8g",
