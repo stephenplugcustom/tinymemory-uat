@@ -3,13 +3,36 @@
     "58876593-9b87-4500-aa0d-d706dbfb85d9": {
       "type": "slideshow",
       "blocks": {
+        "slide_L4HGma": {
+          "type": "slide",
+          "settings": {
+            "background": "shopify:\/\/shop_images\/ezgif-6-53403da81b_dee434b5-1407-41db-beaf-4be0e6000292.gif",
+            "mb_background": "shopify:\/\/shop_images\/ezgif-6-53403da81b.gif",
+            "image_overlay_opacity": 0,
+            "content_position": "center",
+            "text_alignment": "center",
+            "text_color": "#000000",
+            "title": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "description": "",
+            "button_text_1": "",
+            "button_link_1": "",
+            "button_style_1": "btn--primary",
+            "button_size_1": "",
+            "button_text_2": "",
+            "button_link_2": "",
+            "button_style_2": "btn--primary",
+            "button_size_2": ""
+          }
+        },
         "slide_kE76Vw": {
           "type": "slide",
           "settings": {
             "background": "shopify:\/\/shop_images\/22_copy.png",
             "image_overlay_opacity": 0,
             "content_position": "center",
-            "text_alignment": "center",
+            "text_alignment": "left",
             "text_color": "#222222",
             "title": "",
             "heading_size": "h2",
@@ -17,7 +40,7 @@
             "description": "",
             "button_text_1": "喜劇之王",
             "button_link_1": "shopify:\/\/collections\/喜劇之王",
-            "button_style_1": "btn--primary",
+            "button_style_1": "btn--white",
             "button_size_1": "",
             "button_text_2": "",
             "button_link_2": "shopify:\/\/collections\/喜劇之王",
@@ -93,20 +116,21 @@
         }
       },
       "block_order": [
+        "slide_L4HGma",
         "slide_kE76Vw",
         "slide_GP9yye",
         "slide_Jexp8g",
         "slide_XV8grX"
       ],
       "settings": {
-        "container": "container-fluid",
+        "container": "container-full",
         "slideshow_height": "adapt",
         "show_dots": true,
         "show_nav": true,
         "autoplay": true,
-        "autorotate_speed": 3,
+        "autorotate_speed": 5,
         "pagination_style": "dots",
-        "controls_position": "right",
+        "controls_position": "center",
         "show_text_below": true,
         "text_alignment_mobile": "center",
         "accessibility_info": "",
