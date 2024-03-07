@@ -75,9 +75,9 @@
           "settings": {
             "background": "shopify:\/\/shop_images\/DSC00248_-_copy.jpg",
             "image_overlay_opacity": 0,
-            "content_position": "center",
-            "text_alignment": "left",
-            "text_color": "#000000",
+            "content_position": "right-bottom",
+            "text_alignment": "center",
+            "text_color": "#1773b0",
             "title": "",
             "heading_size": "h1",
             "subheading": "",
@@ -85,29 +85,7 @@
             "button_text_1": "喜劇之王",
             "button_link_1": "shopify:\/\/collections",
             "button_style_1": "btn--white",
-            "button_size_1": "btn--small",
-            "button_text_2": "",
-            "button_link_2": "",
-            "button_style_2": "btn--primary",
-            "button_size_2": ""
-          }
-        },
-        "slide_XV8grX": {
-          "type": "slide",
-          "settings": {
-            "background": "shopify:\/\/shop_images\/phonecase2_copy_3.jpg",
-            "image_overlay_opacity": 0,
-            "content_position": "center",
-            "text_alignment": "center",
-            "text_color": "#ffffff",
-            "title": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "description": "",
-            "button_text_1": "",
-            "button_link_1": "shopify:\/\/products\/iphone-case-喜劇之王",
-            "button_style_1": "btn--underline",
-            "button_size_1": "",
+            "button_size_1": "btn--medium",
             "button_text_2": "",
             "button_link_2": "",
             "button_style_2": "btn--primary",
@@ -119,8 +97,7 @@
         "slide_L4HGma",
         "slide_kE76Vw",
         "slide_GP9yye",
-        "slide_Jexp8g",
-        "slide_XV8grX"
+        "slide_Jexp8g"
       ],
       "settings": {
         "container": "container-full",
