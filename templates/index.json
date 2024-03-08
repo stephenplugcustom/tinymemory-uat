@@ -118,29 +118,22 @@
     "image_comparison_ikji9z": {
       "type": "image-comparison",
       "blocks": {
-        "image_Tj6AtL": {
+        "image_rHAQz9": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1473wood_1.png",
-            "heading": ""
-          }
-        },
-        "image_mDXe9d": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1473_copy_1.png",
+            "image": "shopify:\/\/shop_images\/CocaCola_Phone_case_copy.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/CocaCola_Phone_case_copy_855804ba-7fb6-4da4-bafb-832bc991e9ea.jpg",
             "heading": ""
           }
         }
       },
       "block_order": [
-        "image_Tj6AtL",
-        "image_mDXe9d"
+        "image_rHAQz9"
       ],
       "settings": {
-        "container": "container",
-        "color_schema": "background-1",
-        "heading": "Puzzle",
+        "container": "container-fluid",
+        "color_schema": "background-2",
+        "heading": "PRODUCT",
         "heading_size": "h2",
         "description": "",
         "layout": "horizontal",
