@@ -3,6 +3,28 @@
     "58876593-9b87-4500-aa0d-d706dbfb85d9": {
       "type": "slideshow",
       "blocks": {
+        "slide_dEKMTV": {
+          "type": "slide",
+          "settings": {
+            "background": "shopify:\/\/shop_images\/CocaCola_1980X900_59a85ba9-1bc7-47e1-b24d-334517642e27.gif",
+            "image_overlay_opacity": 0,
+            "content_position": "center",
+            "text_alignment": "center",
+            "text_color": "#000000",
+            "title": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "description": "",
+            "button_text_1": "Button label",
+            "button_link_1": "",
+            "button_style_1": "btn--primary",
+            "button_size_1": "",
+            "button_text_2": "",
+            "button_link_2": "",
+            "button_style_2": "btn--primary",
+            "button_size_2": ""
+          }
+        },
         "slide_kE76Vw": {
           "type": "slide",
           "settings": {
@@ -68,35 +90,13 @@
             "button_style_2": "btn--primary",
             "button_size_2": ""
           }
-        },
-        "slide_dEKMTV": {
-          "type": "slide",
-          "settings": {
-            "background": "shopify:\/\/shop_images\/CocaCola_1980X900_59a85ba9-1bc7-47e1-b24d-334517642e27.gif",
-            "image_overlay_opacity": 0,
-            "content_position": "center",
-            "text_alignment": "center",
-            "text_color": "#000000",
-            "title": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "description": "",
-            "button_text_1": "Button label",
-            "button_link_1": "",
-            "button_style_1": "btn--primary",
-            "button_size_1": "",
-            "button_text_2": "",
-            "button_link_2": "",
-            "button_style_2": "btn--primary",
-            "button_size_2": ""
-          }
         }
       },
       "block_order": [
+        "slide_dEKMTV",
         "slide_kE76Vw",
         "slide_GP9yye",
-        "slide_Jexp8g",
-        "slide_dEKMTV"
+        "slide_Jexp8g"
       ],
       "settings": {
         "container": "container-full",
