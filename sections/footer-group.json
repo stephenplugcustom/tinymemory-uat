@@ -21,9 +21,9 @@
           "type": "column",
           "settings": {
             "image_link": "",
-            "title": "$25運費",
+            "title": "$30運費",
             "heading_size": "h3",
-            "text": "<h4>訂單低於$350，需付$25運費。<\/h4>",
+            "text": "<h4>訂單低於$350，需付$30運費。本公司統一使用順豐速遞。<\/h4>",
             "button_text": "",
             "button_link": "",
             "button_style": "btn--underline"
