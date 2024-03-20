@@ -71,7 +71,7 @@
           "settings": {
             "deliver_text": "預計運送時間：",
             "deliver_days": "9",
-            "shipping_text": "<p>消費滿<strong>港幣350元或以上<\/strong>可享<strong>免運費<\/strong><\/p><p>訂單<strong>不足港幣350<\/strong>元需付<strong>運費25元<\/strong><\/p>",
+            "shipping_text": "<p>消費滿<strong>港幣350元或以上<\/strong>可享<strong>免運費<\/strong><\/p><p>訂單<strong>不足港幣350<\/strong>元需付<strong>運費30元<\/strong><\/p>",
             "date_format": "%b %d"
           }
         },
